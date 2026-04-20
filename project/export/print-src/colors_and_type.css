@@ -1,0 +1,229 @@
+/* =========================================================
+   UCCF — Uganda Child Cancer Foundation
+   Colors & Type tokens
+   ========================================================= */
+
+/* ---------- Fonts ---------- */
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("./fonts/BrandonGrotesque-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("./fonts/BrandonGrotesque-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("./fonts/BrandonGrotesque-Medium.otf") format("opentype");
+  font-weight: 500 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* ---------- Brand primitives ---------- */
+  --uccf-yellow:    #f2d411;  /* sunshine yellow — primary accent */
+  --uccf-blue:      #00acea;  /* bright sky blue — primary action */
+  --uccf-navy:      #00012b;  /* near-black navy — text & outlines */
+
+  /* Supporting tints (derived, use sparingly) */
+  --uccf-yellow-50:  #fff9d1;
+  --uccf-yellow-100: #fdeb7a;
+  --uccf-yellow-700: #c9ae00;
+
+  --uccf-blue-50:   #e1f6fe;
+  --uccf-blue-100:  #b8e9fc;
+  --uccf-blue-700:  #0079a6;
+
+  --uccf-navy-80:   #2a2b4d;
+  --uccf-navy-60:   #55566f;
+  --uccf-navy-40:   #8a8b9a;
+  --uccf-navy-20:   #c4c4cc;
+  --uccf-navy-10:   #e6e6ea;
+  --uccf-navy-05:   #f4f4f6;
+
+  --uccf-white:     #ffffff;
+  --uccf-cream:     #fffdf2;   /* warm off-white page bg */
+
+  /* ---------- Semantic colors ---------- */
+  --fg-1:           var(--uccf-navy);       /* primary text */
+  --fg-2:           var(--uccf-navy-80);    /* secondary text */
+  --fg-3:           var(--uccf-navy-60);    /* muted / meta */
+  --fg-on-dark:     var(--uccf-white);
+  --fg-on-yellow:   var(--uccf-navy);
+  --fg-on-blue:     var(--uccf-white);
+
+  --bg-1:           var(--uccf-white);      /* default surface */
+  --bg-2:           var(--uccf-cream);      /* warm page bg */
+  --bg-3:           var(--uccf-navy-05);    /* subtle panel */
+  --bg-dark:        var(--uccf-navy);
+  --bg-yellow:      var(--uccf-yellow);
+  --bg-blue:        var(--uccf-blue);
+
+  --border-1:       var(--uccf-navy);       /* bold outlines — signature */
+  --border-2:       var(--uccf-navy-20);    /* quiet dividers */
+  --border-3:       var(--uccf-navy-10);
+
+  --accent:         var(--uccf-yellow);
+  --action:         var(--uccf-blue);
+  --action-hover:   var(--uccf-blue-700);
+
+  --success:        #2ec27e;
+  --warning:        #f2a71b;
+  --danger:         #e4572e;
+  --info:           var(--uccf-blue);
+
+  /* ---------- Type ---------- */
+  --font-sans:  "Brandon Grotesque", "Proxima Nova", "Avenir Next",
+                ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+                "Helvetica Neue", Arial, sans-serif;
+  --font-mono:  ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Type scale (modular, 1.25) */
+  --fs-xs:    12px;
+  --fs-sm:    14px;
+  --fs-base:  16px;
+  --fs-md:    18px;
+  --fs-lg:    22px;
+  --fs-xl:    28px;
+  --fs-2xl:   36px;
+  --fs-3xl:   48px;
+  --fs-4xl:   64px;
+  --fs-5xl:   84px;
+
+  --lh-tight:  1.08;
+  --lh-snug:   1.2;
+  --lh-normal: 1.45;
+  --lh-loose:  1.65;
+
+  --tracking-tight:  -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.04em;
+  --tracking-xwide:  0.12em;  /* eyebrows / labels */
+
+  /* ---------- Spacing (4px base) ---------- */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* ---------- Radii ---------- */
+  --radius-xs:  4px;
+  --radius-sm:  8px;
+  --radius-md:  14px;
+  --radius-lg:  22px;    /* default card */
+  --radius-xl:  32px;    /* hero / mark-like */
+  --radius-pill: 999px;
+
+  /* ---------- Borders (signature: thick navy outlines) ---------- */
+  --stroke-1: 1.5px;
+  --stroke-2: 2.5px;
+  --stroke-3: 4px;       /* hero / logo-adjacent */
+
+  /* ---------- Shadows (soft, low, never fancy) ---------- */
+  --shadow-sm: 0 1px 2px rgba(0,1,43,.08);
+  --shadow-md: 0 6px 18px rgba(0,1,43,.10);
+  --shadow-lg: 0 18px 42px rgba(0,1,43,.14);
+  /* Signature "stacked" shadow — a flat navy offset, playful & picture-book */
+  --shadow-stack: 6px 6px 0 var(--uccf-navy);
+
+  /* ---------- Motion ---------- */
+  --ease-out:   cubic-bezier(.2,.8,.2,1);
+  --ease-in-out:cubic-bezier(.6,0,.4,1);
+  --dur-fast:   120ms;
+  --dur-base:   220ms;
+  --dur-slow:   420ms;
+}
+
+/* =========================================================
+   Semantic element styles
+   ========================================================= */
+html, body {
+  font-family: var(--font-sans);
+  color: var(--fg-1);
+  background: var(--bg-1);
+  font-size: var(--fs-base);
+  line-height: var(--lh-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, .h1 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: var(--fs-4xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg-1);
+  margin: 0 0 var(--space-4);
+}
+h2, .h2 {
+  font-weight: 700;
+  font-size: var(--fs-2xl);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg-1);
+  margin: 0 0 var(--space-3);
+}
+h3, .h3 {
+  font-weight: 500;
+  font-size: var(--fs-xl);
+  line-height: var(--lh-snug);
+  color: var(--fg-1);
+  margin: 0 0 var(--space-3);
+}
+h4, .h4 {
+  font-weight: 500;
+  font-size: var(--fs-lg);
+  line-height: var(--lh-snug);
+  color: var(--fg-1);
+  margin: 0 0 var(--space-2);
+}
+p, .p {
+  font-size: var(--fs-base);
+  line-height: var(--lh-normal);
+  color: var(--fg-2);
+  margin: 0 0 var(--space-3);
+}
+small, .small {
+  font-size: var(--fs-sm);
+  color: var(--fg-3);
+}
+.eyebrow {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-xwide);
+  color: var(--uccf-blue);
+}
+.display {
+  font-weight: 700;
+  font-size: var(--fs-5xl);
+  line-height: .95;
+  letter-spacing: var(--tracking-tight);
+}
+code, pre, .mono {
+  font-family: var(--font-mono);
+  font-size: .95em;
+}
+
+/* Focus ring — accessible on all surfaces */
+:focus-visible {
+  outline: 3px solid var(--uccf-yellow);
+  outline-offset: 2px;
+  border-radius: var(--radius-xs);
+}

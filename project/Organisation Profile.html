@@ -1,0 +1,1671 @@
+<!DOCTYPE html><html lang="en"><head>
+
+
+
+
+<meta charset="utf-8">
+<title>UCCF — Organisational Profile 2026</title>
+<link rel="stylesheet" href="colors_and_type.css">
+<style>
+  /* ---------- A4 page setup ---------- */
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  :root {
+    --page-w: 210mm;
+    --page-h: 297mm;
+    --margin-x: 16mm;
+    --margin-y: 16mm;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    background: #d6d6dc;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-sans);
+    color: var(--fg-1);
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+  *, *::before, *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  img {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    image-rendering: -webkit-optimize-contrast;
+  }
+
+  .doc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12mm;
+    padding: 18mm 0;
+  }
+
+  .page {
+    position: relative;
+    width: var(--page-w);
+    height: var(--page-h);
+    background: var(--uccf-cream);
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,.12), 0 16px 50px rgba(0,1,43,.18);
+    page-break-after: always;
+    break-after: page;
+  }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+
+  @media print {
+    html, body { background: #fff; }
+    .doc { gap: 0; padding: 0; }
+    .page { box-shadow: none; margin: 0; }
+  }
+
+  /* ---------- Page chrome ---------- */
+  .page-num {
+    position: absolute;
+    right: var(--margin-x);
+    bottom: 10mm;
+    font-size: 9pt;
+    font-weight: 500;
+    color: var(--uccf-navy-60);
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+  .page-foot {
+    position: absolute;
+    left: var(--margin-x);
+    bottom: 10mm;
+    font-size: 8.5pt;
+    color: var(--uccf-navy-60);
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .page-foot b { color: var(--uccf-navy); font-weight: 700; }
+
+  /* ---------- Type helpers for print ---------- */
+  .eyebrow {
+    font-size: 8.5pt;
+    font-weight: 700;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--uccf-blue);
+    margin: 0 0 6mm;
+  }
+  .eyebrow.yellow { color: var(--uccf-yellow-700); }
+  .eyebrow.navy { color: var(--uccf-navy); }
+  .eyebrow.cream { color: var(--uccf-yellow); }
+
+  h1.section, .section-title {
+    font-size: 26pt;
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -0.015em;
+    color: var(--uccf-navy);
+    margin: 0 0 5mm;
+  }
+  h2.sub {
+    font-size: 14pt;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    color: var(--uccf-navy);
+    margin: 0 0 2mm;
+  }
+
+  p.body, .body-p {
+    font-size: 10pt;
+    line-height: 1.55;
+    color: var(--uccf-navy-80);
+    margin: 0 0 3mm;
+    text-wrap: pretty;
+  }
+  .lead {
+    font-size: 11.5pt;
+    line-height: 1.5;
+    color: var(--uccf-navy);
+    font-weight: 400;
+    margin: 0 0 5mm;
+    text-wrap: pretty;
+  }
+
+  .divider {
+    height: 2.5px;
+    background: var(--uccf-navy);
+    border: none;
+    margin: 0;
+    width: 24mm;
+  }
+
+  /* ---------- Signature "stack" card ---------- */
+  .stack-card {
+    border: 2.5px solid var(--uccf-navy);
+    background: var(--uccf-cream);
+    border-radius: 6mm;
+    box-shadow: 4px 4px 0 var(--uccf-navy);
+    padding: 7mm 7mm;
+  }
+
+  /* ---------- Dot texture ---------- */
+  .dots {
+    background-image: radial-gradient(var(--uccf-yellow) 1.4px, transparent 1.6px);
+    background-size: 5mm 5mm;
+    background-position: 0 0;
+  }
+  .dots-navy {
+    background-image: radial-gradient(rgba(0,1,43,.16) 1.4px, transparent 1.6px);
+    background-size: 5mm 5mm;
+  }
+
+  /* =========================================================
+     PAGE 1 — COVER
+     ========================================================= */
+  .cover {
+    background: var(--uccf-navy);
+    color: var(--uccf-cream);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  .cover-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 14mm var(--margin-x) 0;
+    gap: 8mm;
+  }
+  .cover-top img {
+    height: 14mm;
+    filter: none;
+  }
+  .cover-meta {
+    text-align: right;
+    font-size: 8.5pt;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--uccf-yellow);
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  .cover-photo {
+    position: relative;
+    margin: 10mm var(--margin-x) 0;
+    border: 3px solid var(--uccf-yellow);
+    border-radius: 6mm;
+    overflow: hidden;
+    height: 118mm;
+    box-shadow: 6px 6px 0 var(--uccf-yellow);
+  }
+  .cover-photo img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .cover-title {
+    padding: 12mm var(--margin-x) 0;
+  }
+  .cover-eyebrow {
+    font-size: 9pt;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    color: var(--uccf-yellow);
+    font-weight: 700;
+    margin: 0 0 5mm;
+    display: flex;
+    align-items: center;
+    gap: 5mm;
+  }
+  .cover-eyebrow::before {
+    content: "";
+    display: inline-block;
+    width: 10mm; height: 3px;
+    background: var(--uccf-yellow);
+  }
+  .cover h1 {
+    font-size: 44pt;
+    line-height: 0.94;
+    letter-spacing: -0.025em;
+    font-weight: 700;
+    color: var(--uccf-cream);
+    margin: 0 0 4mm;
+  }
+  .cover h1 .accent { color: var(--uccf-yellow); }
+  .cover .kicker {
+    font-size: 13pt;
+    color: var(--uccf-yellow);
+    font-weight: 500;
+    letter-spacing: .02em;
+    margin: 0;
+  }
+  .cover-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 var(--margin-x) 14mm;
+    gap: 8mm;
+  }
+  .cover-foot .tagline {
+    font-size: 13pt;
+    font-weight: 500;
+    color: var(--uccf-cream);
+    max-width: 90mm;
+    line-height: 1.3;
+  }
+  .cover-foot .tagline .underline {
+    color: var(--uccf-yellow);
+    font-weight: 700;
+  }
+  .cover-foot .contact {
+    text-align: right;
+    font-size: 9pt;
+    color: var(--uccf-yellow);
+    line-height: 1.6;
+    letter-spacing: .06em;
+    font-weight: 500;
+  }
+  .cover-foot .contact b { color: var(--uccf-cream); font-weight: 700; }
+  .cover-dots {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(242,212,17,.14) 1.2px, transparent 1.4px);
+    background-size: 6mm 6mm;
+    pointer-events: none;
+    mix-blend-mode: screen;
+    display: none;
+  }
+
+  /* =========================================================
+     PAGE 2 — Our Story / Who We Are
+     ========================================================= */
+  .p-body {
+    padding: var(--margin-y) var(--margin-x);
+    height: 100%;
+    display: flex; flex-direction: column;
+  }
+  .masthead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8mm;
+    padding-bottom: 4mm;
+    border-bottom: 1.5px solid var(--uccf-navy-20);
+  }
+  .masthead img { height: 12mm; }
+  .masthead .run {
+    font-size: 8pt;
+    letter-spacing: .24em;
+    text-transform: uppercase;
+    color: var(--uccf-navy-60);
+    font-weight: 500;
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8mm;
+  }
+  .pill-tag {
+    display: inline-block;
+    padding: 2mm 5mm;
+    background: var(--uccf-yellow);
+    color: var(--uccf-navy);
+    font-size: 9pt;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    border: 2px solid var(--uccf-navy);
+    border-radius: 999px;
+  }
+
+  .photo-block {
+    border: 2.5px solid var(--uccf-navy);
+    border-radius: 5mm;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 5px 0 var(--uccf-yellow);
+  }
+  .photo-block img {
+    width: 100%; display: block;
+    height: 72mm;
+    object-fit: cover;
+  }
+  .photo-block .caption {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding: 4mm 5mm;
+    background: linear-gradient(to top, rgba(0,1,43,.85), transparent);
+    color: var(--uccf-cream);
+    font-size: 8.5pt;
+    font-weight: 500;
+    letter-spacing: .06em;
+  }
+
+  /* =========================================================
+     PAGE 3 — Vision Mission Goal + Values
+     ========================================================= */
+  .banner-photo {
+    position: relative;
+    width: calc(100% + 2 * var(--margin-x));
+    margin-left: calc(-1 * var(--margin-x));
+    margin-right: calc(-1 * var(--margin-x));
+    height: 78mm;
+    overflow: hidden;
+  }
+  .banner-photo img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .banner-photo .tint {
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(0,1,43,.55) 0%, rgba(0,1,43,.2) 55%, rgba(242,212,17,.18) 100%);
+  }
+  .banner-photo .overlay-box {
+    position: absolute;
+    left: calc(var(--margin-x) + 8mm);
+    bottom: 6mm;
+    background: var(--uccf-yellow);
+    color: var(--uccf-navy);
+    padding: 4mm 6mm;
+    border: 2.5px solid var(--uccf-navy);
+    border-radius: 4mm;
+    box-shadow: 4px 4px 0 var(--uccf-navy);
+    font-weight: 700;
+    font-size: 10.5pt;
+    letter-spacing: .02em;
+  }
+  .banner-photo .overlay-eyebrow {
+    position: absolute;
+    left: calc(var(--margin-x) + 8mm);
+    top: 14mm;
+    color: var(--uccf-yellow);
+    font-size: 9pt;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .vmg-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5mm;
+    margin-top: 8mm;
+  }
+  .vmg-card {
+    border: 2.5px solid var(--uccf-navy);
+    border-radius: 5mm;
+    padding: 6mm 5mm;
+    background: var(--uccf-cream);
+    position: relative;
+    box-shadow: 4px 4px 0 var(--uccf-navy);
+  }
+  .vmg-card.yellow { background: var(--uccf-yellow); }
+  .vmg-card.blue { background: var(--uccf-blue); color: var(--uccf-cream); }
+  .vmg-card.blue h2, .vmg-card.blue .vmg-label { color: var(--uccf-cream); }
+  .vmg-card.navy { background: var(--uccf-navy); color: var(--uccf-cream); }
+  .vmg-card.navy h2, .vmg-card.navy .vmg-label { color: var(--uccf-cream); }
+  .vmg-card.navy .vmg-text { color: var(--uccf-yellow); }
+  .vmg-label {
+    font-size: 8pt;
+    letter-spacing: .24em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--uccf-navy);
+    margin: 0 0 2mm;
+  }
+  .vmg-card h2 {
+    font-size: 18pt;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 0 3mm;
+    color: var(--uccf-navy);
+  }
+  .vmg-text {
+    font-size: 9.5pt;
+    line-height: 1.45;
+    color: var(--uccf-navy);
+    margin: 0;
+  }
+
+  /* ---------- Values grid ---------- */
+  .values-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4mm;
+    margin-top: 6mm;
+  }
+  .value-row {
+    display: grid;
+    grid-template-columns: 14mm 1fr;
+    gap: 4mm;
+    align-items: flex-start;
+    padding: 3mm 0;
+    border-bottom: 1.5px solid var(--uccf-navy-20);
+  }
+  .value-row:last-child, .value-row:nth-last-child(2) { border-bottom: none; }
+  .value-num {
+    display: grid;
+    place-items: center;
+    width: 12mm; height: 12mm;
+    border-radius: 50%;
+    border: 2.5px solid var(--uccf-navy);
+    background: var(--uccf-yellow);
+    font-weight: 700;
+    color: var(--uccf-navy);
+    font-size: 11pt;
+    box-shadow: 2px 2px 0 var(--uccf-navy);
+  }
+  .value-row:nth-child(2n) .value-num { background: var(--uccf-blue); color: var(--uccf-cream); }
+  .value-body h4 {
+    font-size: 11pt; font-weight: 700; margin: 0 0 1mm;
+    color: var(--uccf-navy);
+  }
+  .value-body p { font-size: 9pt; line-height: 1.4; color: var(--uccf-navy-80); margin: 0; }
+
+  /* =========================================================
+     PAGE 4 — Challenge + Impact + Quote
+     ========================================================= */
+  .challenge-hero {
+    background: var(--uccf-navy);
+    color: var(--uccf-cream);
+    border-radius: 6mm;
+    padding: 8mm 8mm;
+    position: relative;
+    overflow: hidden;
+    border: 2.5px solid var(--uccf-navy);
+  }
+  .challenge-hero::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(242,212,17,.16) 1.2px, transparent 1.4px);
+    background-size: 5mm 5mm;
+    pointer-events: none;
+    display: none;
+  }
+  .challenge-hero h1 { color: var(--uccf-cream); font-size: 24pt; margin: 0 0 4mm; position: relative; }
+  .challenge-hero h1 .accent { color: var(--uccf-yellow); }
+  .challenge-hero p { color: rgba(255,253,242,.86); font-size: 10pt; line-height: 1.55; position: relative; }
+  .challenge-hero .stat-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5mm;
+    margin-top: 6mm;
+    padding-top: 6mm;
+    border-top: 1.5px solid rgba(242,212,17,.35);
+    position: relative;
+  }
+  .challenge-hero .stat-row .num {
+    font-size: 22pt; font-weight: 700; color: var(--uccf-yellow);
+    line-height: 1;
+  }
+  .challenge-hero .stat-row .lbl {
+    font-size: 8.5pt; color: rgba(255,253,242,.78); margin-top: 2mm;
+    letter-spacing: .02em; line-height: 1.3;
+  }
+
+  .impact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4mm;
+    margin-top: 6mm;
+  }
+  .impact-card {
+    border: 2.5px solid var(--uccf-navy);
+    border-radius: 4mm;
+    padding: 5mm;
+    text-align: left;
+    background: var(--uccf-cream);
+    box-shadow: 3px 3px 0 var(--uccf-navy);
+  }
+  .impact-card.y { background: var(--uccf-yellow); }
+  .impact-card.b { background: var(--uccf-blue); color: var(--uccf-cream); }
+  .impact-card .big {
+    font-size: 26pt;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -.02em;
+    color: var(--uccf-navy);
+  }
+  .impact-card.b .big { color: var(--uccf-cream); }
+  .impact-card .lbl {
+    margin-top: 3mm;
+    font-size: 8.5pt;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--uccf-navy-80);
+  }
+  .impact-card.b .lbl { color: rgba(255,253,242,.9); }
+
+  .quote-block {
+    margin-top: 6mm;
+    display: grid;
+    grid-template-columns: 36mm 1fr;
+    gap: 6mm;
+    align-items: stretch;
+  }
+  .quote-photo {
+    border: 2.5px solid var(--uccf-navy);
+    border-radius: 4mm;
+    overflow: hidden;
+    box-shadow: 3px 3px 0 var(--uccf-yellow);
+  }
+  .quote-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .quote-body {
+    border-left: 3px solid var(--uccf-yellow);
+    padding-left: 6mm;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .quote-body .mark {
+    font-size: 30pt;
+    line-height: .6;
+    color: var(--uccf-yellow);
+    font-weight: 700;
+  }
+  .quote-body blockquote {
+    margin: 3mm 0 4mm;
+    font-size: 11pt;
+    line-height: 1.45;
+    color: var(--uccf-navy);
+    font-weight: 500;
+    font-style: italic;
+  }
+  .quote-body cite {
+    font-style: normal;
+    font-size: 9pt;
+    color: var(--uccf-navy-60);
+    letter-spacing: .06em;
+    font-weight: 500;
+  }
+
+  /* =========================================================
+     PAGE 5+ — Programmes
+     ========================================================= */
+  .programme-head {
+    display: grid;
+    grid-template-columns: 14mm 1fr auto;
+    gap: 5mm;
+    align-items: center;
+    margin-bottom: 5mm;
+  }
+  .programme-num {
+    width: 14mm; height: 14mm;
+    border-radius: 50%;
+    background: var(--uccf-yellow);
+    border: 2.5px solid var(--uccf-navy);
+    display: grid; place-items: center;
+    font-weight: 700;
+    font-size: 14pt;
+    color: var(--uccf-navy);
+    box-shadow: 3px 3px 0 var(--uccf-navy);
+  }
+  .programme-num.blue { background: var(--uccf-blue); color: var(--uccf-cream); }
+  .programme-num.navy { background: var(--uccf-navy); color: var(--uccf-yellow); }
+  .programme-head h1 {
+    font-size: 22pt; margin: 0; color: var(--uccf-navy);
+    line-height: 1;
+  }
+  .programme-head .tag {
+    font-size: 8pt;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--uccf-blue);
+    font-weight: 700;
+  }
+
+  .prog-list {
+    margin-top: 4mm;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3mm;
+  }
+  .prog-item {
+    padding: 3.5mm 0;
+    border-bottom: 1.5px solid var(--uccf-navy-20);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1mm;
+  }
+  .prog-item:last-child { border-bottom: none; }
+  .prog-item h3 {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: var(--uccf-navy);
+    margin: 0;
+    letter-spacing: -.005em;
+  }
+  .prog-item p { font-size: 9pt; line-height: 1.45; color: var(--uccf-navy-80); margin: 0; }
+
+  .prog-item.compact p { font-size: 8.8pt; }
+
+  /* inline aside photo */
+  .aside-photo.left {
+    float: left;
+    margin: 0 5mm 3mm 0;
+  }
+  .aside-photo.left .cap { background: var(--uccf-cream); }
+  .aside-photo.left {
+    border: 2.5px solid var(--uccf-navy);
+    border-radius: 4mm;
+    overflow: hidden;
+    box-shadow: 3px 3px 0 var(--uccf-yellow);
+  }
+  .prog-list.has-float { display: block; }
+  .prog-list.has-float::after { content: ""; display: block; clear: both; }
+  .prog-list.has-float .prog-item { display: block; }
+  .aside-photo.large {
+    width: 78mm;
+  }
+  .aside-photo {
+    float: right;
+    width: 55mm;
+    margin: 0 0 3mm 5mm;
+    border: 2.5px solid var(--uccf-navy);
+    border-radius: 4mm;
+    overflow: hidden;
+    box-shadow: 3px 3px 0 var(--uccf-yellow);
+  }
+  .aside-photo img { width: 100%; display: block; height: 72mm; object-fit: cover; }
+  .aside-photo .cap {
+    padding: 2mm 3mm;
+    font-size: 7.5pt;
+    color: var(--uccf-navy-60);
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-top: 1.5px solid var(--uccf-navy-20);
+    background: var(--uccf-cream);
+  }
+
+  /* ---- Contribute page ---- */
+  .contribute-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3mm;
+    margin-top: 2mm;
+  }
+  .contrib-card {
+    border: 2.5px solid var(--uccf-navy);
+    border-radius: 5mm;
+    padding: 3.5mm 4mm;
+    background: var(--uccf-white);
+    box-shadow: 3px 3px 0 var(--uccf-navy);
+  }
+  .contrib-card .step {
+    display: inline-block;
+    font-size: 7.5pt;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--uccf-blue);
+    font-weight: 700;
+    margin-bottom: 0.5mm;
+  }
+  .contrib-card h3 {
+    font-size: 12pt;
+    font-weight: 700;
+    margin: 0 0 2mm;
+    color: var(--uccf-navy);
+  }
+  .contrib-card p {
+    font-size: 9pt;
+    line-height: 1.45;
+    color: var(--uccf-navy-80);
+    margin: 0 0 3mm;
+  }
+  .kv {
+    display: grid;
+    grid-template-columns: 32mm 1fr;
+    gap: 1mm 3mm;
+    font-size: 9pt;
+    padding: 3mm;
+    background: var(--uccf-cream);
+    border: 1.5px solid var(--uccf-navy-20);
+    border-radius: 3mm;
+    margin-top: 2mm;
+  }
+  .kv .k { color: var(--uccf-navy-60); font-weight: 500; letter-spacing: .04em; text-transform: uppercase; font-size: 7.5pt; align-self: center; }
+  .kv .v { color: var(--uccf-navy); font-weight: 700; }
+  .link {
+    font-size: 8.5pt;
+    color: var(--uccf-blue-700);
+    word-break: break-all;
+    background: var(--uccf-blue-50);
+    padding: 2mm 3mm;
+    border-radius: 2mm;
+    border: 1.5px solid var(--uccf-blue-100);
+    display: block;
+    margin-top: 2mm;
+  }
+
+  /* ---- Partner contact card ---- */
+  .cta-card {
+    background: var(--uccf-yellow);
+    border: 2.5px solid var(--uccf-navy);
+    border-radius: 5mm;
+    padding: 6mm;
+    box-shadow: 5px 5px 0 var(--uccf-navy);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 6mm;
+    align-items: center;
+  }
+  .cta-card h3 {
+    font-size: 14pt;
+    font-weight: 700;
+    margin: 0 0 2mm;
+    color: var(--uccf-navy);
+  }
+  .cta-card p { font-size: 9.5pt; margin: 0; color: var(--uccf-navy); line-height: 1.4; }
+  .cta-card .contact-block {
+    text-align: right;
+    font-size: 9pt;
+    color: var(--uccf-navy);
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  .cta-card .contact-block b { font-weight: 700; font-size: 10.5pt; display: block; margin-bottom: 1mm; }
+
+  /* ---- Partners chips ---- */
+  .partners-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5mm;
+    margin-top: 4mm;
+  }
+  .partner-chip {
+    padding: 3mm 3.5mm;
+    border: 1.5px solid var(--uccf-navy);
+    border-radius: 3mm;
+    background: var(--uccf-white);
+    display: grid;
+    grid-template-columns: 8mm 1fr;
+    gap: 3mm;
+    align-items: center;
+  }
+  .partner-chip .dot {
+    width: 7.5mm; height: 7.5mm;
+    border-radius: 50%;
+    border: 1.5px solid var(--uccf-navy);
+    background: var(--uccf-yellow);
+    display: grid; place-items: center;
+    font-size: 9pt; font-weight: 700;
+    color: var(--uccf-navy);
+  }
+  .partner-chip:nth-child(2n) .dot { background: var(--uccf-blue); color: var(--uccf-cream); }
+  .partner-chip h4 { font-size: 9pt; margin: 0 0 0.5mm; color: var(--uccf-navy); font-weight: 700; line-height: 1.2; }
+  .partner-chip p { font-size: 7.8pt; margin: 0; color: var(--uccf-navy-80); line-height: 1.3; }
+
+  /* ---- Ways to Partner list ---- */
+  .ways-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3mm 5mm;
+    margin-top: 4mm;
+  }
+  .ways-list li {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 6mm 1fr;
+    gap: 3mm;
+    font-size: 10pt;
+    color: var(--uccf-navy);
+    align-items: center;
+    padding: 2mm 0;
+  }
+  .ways-list li::before {
+    content: "";
+    width: 4mm; height: 4mm;
+    background: var(--uccf-yellow);
+    border: 2px solid var(--uccf-navy);
+    border-radius: 2px;
+    box-shadow: 1.5px 1.5px 0 var(--uccf-navy);
+  }
+
+  /* ---- Closing page ---- */
+  .closing {
+    background: var(--uccf-navy);
+    color: var(--uccf-cream);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  .closing-banner {
+    position: relative;
+    height: 130mm;
+    overflow: hidden;
+  }
+  .closing-banner img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .closing-banner .tint {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(0,1,43,.4) 0%, rgba(0,1,43,.9) 100%);
+  }
+  .closing-body {
+    padding: 14mm var(--margin-x) 0;
+    text-align: center;
+  }
+  .closing-body h1 {
+    font-size: 34pt;
+    color: var(--uccf-yellow);
+    font-weight: 700;
+    letter-spacing: -.02em;
+    line-height: 1;
+    margin: 0 0 5mm;
+  }
+  .closing-body p {
+    font-size: 11pt;
+    color: var(--uccf-cream);
+    max-width: 140mm;
+    margin: 0 auto 10mm;
+    line-height: 1.5;
+  }
+  .closing-foot {
+    padding: 0 var(--margin-x) 14mm;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5mm;
+    border-top: 1.5px solid rgba(242,212,17,.3);
+    padding-top: 8mm;
+    margin-top: 6mm;
+  }
+  .closing-foot .block {
+    font-size: 9pt;
+    color: var(--uccf-yellow);
+    letter-spacing: .08em;
+    line-height: 1.5;
+  }
+  .closing-foot .block b { color: var(--uccf-cream); font-weight: 700; display: block; font-size: 8pt; letter-spacing: .2em; text-transform: uppercase; margin-bottom: 2mm; }
+
+  /* Watermark logo mark */
+  .mark-wm {
+    position: absolute;
+    right: -24mm;
+    bottom: -24mm;
+    width: 110mm;
+    height: 110mm;
+    opacity: .08;
+    pointer-events: none;
+  }
+  .mark-wm img { width: 100%; height: 100%; object-fit: contain; }
+
+  /* Looking ahead callout */
+  .ahead-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6mm;
+    margin-top: 5mm;
+  }
+  .ahead-card {
+    border: 2.5px solid var(--uccf-navy);
+    border-radius: 5mm;
+    padding: 6mm;
+    box-shadow: 4px 4px 0 var(--uccf-navy);
+    background: var(--uccf-cream);
+  }
+  .ahead-card h3 {
+    font-size: 13pt;
+    font-weight: 700;
+    color: var(--uccf-navy);
+    margin: 0 0 3mm;
+  }
+  .ahead-card .big-number {
+    font-size: 28pt;
+    font-weight: 700;
+    color: var(--uccf-blue);
+    line-height: 1;
+    letter-spacing: -.02em;
+  }
+  .ahead-card p { font-size: 9.5pt; line-height: 1.45; color: var(--uccf-navy-80); margin: 3mm 0 0; }
+  .ahead-card.blue { background: var(--uccf-blue); color: var(--uccf-cream); }
+  .ahead-card.blue h3, .ahead-card.blue p { color: var(--uccf-cream); }
+  .ahead-card.blue .big-number { color: var(--uccf-yellow); }
+
+  /* Probity banner */
+  .probity {
+    background: var(--uccf-yellow);
+    border: 2.5px solid var(--uccf-navy);
+    border-radius: 5mm;
+    padding: 6mm 8mm;
+    margin-top: 5mm;
+    box-shadow: 4px 4px 0 var(--uccf-navy);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6mm;
+    align-items: center;
+  }
+  .probity .seal {
+    width: 22mm; height: 22mm;
+    border-radius: 50%;
+    background: var(--uccf-navy);
+    color: var(--uccf-yellow);
+    display: grid; place-items: center;
+    text-align: center;
+    font-size: 7pt;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    line-height: 1.2;
+    border: 2.5px solid var(--uccf-navy);
+    padding: 2mm;
+  }
+  .probity h3 { font-size: 12pt; margin: 0 0 1mm; color: var(--uccf-navy); font-weight: 700; }
+  .probity p { font-size: 9pt; margin: 0; color: var(--uccf-navy); line-height: 1.4; }
+
+</style>
+</head>
+<body style="cursor: crosshair;" data-cc-id="cc-1">
+
+<div class="doc" id="doc" data-cc-id="cc-3">
+
+  <!-- =========================================================
+       PAGE 1 — COVER
+  ========================================================= -->
+  <section class="page cover" data-screen-label="01 Cover">
+    <div class="cover-dots"></div>
+
+    <div class="cover-top">
+      <img src="assets/logo-white-wide.png" alt="UCCF — Uganda Child Cancer Foundation">
+      <div class="cover-meta">
+        Organisational Profile<br>
+        2026 Edition
+      </div>
+    </div>
+
+    <div class="cover-photo">
+      <img src="photos/p5.jpeg" alt="A smiling child between a caregiver and another young patient in the paediatric oncology ward.">
+    </div>
+
+    <div class="cover-title">
+      <div class="cover-eyebrow">Uganda Child Cancer Foundation</div>
+      <h1>Every&nbsp;child<br><span class="accent">deserves</span> a chance.</h1>
+      <p class="kicker">A society free of childhood cancer.</p>
+    </div>
+
+    <div class="cover-foot">
+      <div class="tagline">
+        Supporting over <span class="underline">1,000 children</span> a year through treatment, nutrition and the journey back home.
+      </div>
+      <div class="contact" style="" data-cc-id="cc-26">
+        <b>Uganda Cancer Institute<br>Upper Mulago Hill Rd, Kampala</b>&nbsp;<br>info@uccfug.org<br>
+        www.uccfug.org&nbsp;&nbsp;·&nbsp;&nbsp;+256 392 834 441
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PAGE 2 — OUR STORY / WHO WE ARE
+  ========================================================= -->
+  <section class="page" data-screen-label="02 Our Story">
+    <div class="p-body" data-cc-id="cc-2">
+      <div class="masthead">
+        <img src="assets/logo-color-wide.png" alt="UCCF">
+        <div class="run">Organisational Profile · 2026</div>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <div class="eyebrow">Our story</div>
+          <h1 class="section">Born at the bedside.</h1>
+          <hr class="divider">
+          <p class="body" style="margin-top:5mm">
+            In 2006, a group of doctors, nurses, and parents gathered at the Uganda Cancer Institute with a shared conviction: that the children in their care deserved more than medicine alone. These were families who had travelled hundreds of kilometres to reach Kampala, only to face the prospect of watching their children abandon treatment because they could not afford a bus fare home, a meal, or the emotional support to keep going. The medical system was doing its part — but the system had gaps, and those gaps were costing children their lives.
+          </p>
+          <p class="body">
+            From that gathering, the Uganda Child Cancer Foundation was born. It was Uganda's first civil society organisation dedicated exclusively to childhood cancer, built not by outsiders or institutions, but by the people closest to the children themselves. Nearly two decades later, that founding spirit — practical, compassionate, and uncompromising — remains at the heart of everything UCCF does.
+          </p>
+        </div>
+        <div>
+          <div class="photo-block" style="margin-top: 14mm">
+            <img src="photos/p3.jpeg" alt="A mother holds her child in the paediatric ward.">
+            <div class="caption">Caregiver and child at the UCI paediatric oncology ward, Kampala.</div>
+          </div>
+          <div style="margin-top:6mm">
+            <span class="pill-tag">Est. 2006 · Kampala, Uganda</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 10mm; border-top: 2.5px solid var(--uccf-navy); padding-top: 7mm;">
+        <div class="two-col">
+          <div>
+            <div class="eyebrow yellow">Who we are</div>
+            <h1 class="section" style="font-size:22pt">A nationally recognised foundation, rooted at UCI.</h1>
+          </div>
+          <div>
+            <p class="body">
+              The Uganda Child Cancer Foundation (UCCF) is a nationally registered Non-Governmental Organisation (Registration No. S.5914/6566), operating from the campus of the Uganda Cancer Institute — at the very heart of Uganda's paediatric oncology system. In close partnership with UCI, UCCF provides the critical non-medical support that enables children to access, remain in, and complete cancer treatment.
+            </p>
+            <p class="body">
+              From its origins as a small psychosocial support group, UCCF has grown into a nationally recognised foundation with integrated programmes spanning patient support, education and awareness, research, and advocacy — reaching over 1,000 children annually and touching communities across Uganda through its schools network of over 200 institutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-foot"><b>UCCF</b> · Organisational Profile</div>
+    <div class="page-num">02</div>
+  </section>
+
+  <!-- =========================================================
+       PAGE 3 — VISION MISSION GOAL + VALUES
+  ========================================================= -->
+  <section class="page" data-screen-label="03 Vision Mission Values">
+    <div class="p-body" style="padding: 0;">
+      <div class="banner-photo">
+        <img src="photos/p1.jpeg" alt="A child resting on a cushion in the paediatric oncology ward at the Uganda Cancer Institute.">
+        <div class="tint" data-cc-id="cc-4"></div>
+        <div class="overlay-eyebrow" data-cc-id="cc-5" style="text-align: right; margin: 1px;">Vision · Mission · Goal</div>
+        <div class="overlay-box" data-cc-id="cc-6">A society free of childhood cancer.</div>
+      </div>
+
+      <div style="padding: 10mm var(--margin-x) 0;">
+        <div class="vmg-grid">
+          <div class="vmg-card yellow">
+            <div class="vmg-label">Vision</div>
+            <h2>What we see.</h2>
+            <p class="vmg-text">A society free of childhood cancer.</p>
+          </div>
+          <div class="vmg-card blue">
+            <div class="vmg-label">Mission</div>
+            <h2 style="color:var(--uccf-navy)">What we do.</h2>
+            <p class="vmg-text" style="color:var(--uccf-navy)">To contribute towards effective childhood cancer control through patient support, awareness creation, advocacy, research, and mentorship.</p>
+          </div>
+          <div class="vmg-card navy">
+            <div class="vmg-label" style="color:var(--uccf-yellow)">Goal</div>
+            <h2>How we'll get there.</h2>
+            <p class="vmg-text">To facilitate informed decision-making, evidence-based policy change, and life skills for healthy, productive, and empowered communities — as well as better treatment outcomes for children with cancer.</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 10mm; display:flex; justify-content: space-between; align-items: flex-end; gap: 8mm;">
+          <div>
+            <div class="eyebrow">Our values</div>
+            <h1 class="section" style="font-size:22pt; margin: 0;">Six convictions that shape every decision.</h1>
+          </div>
+          <p class="body" style="max-width:90mm; margin:0;">UCCF's work is grounded in core values that guide every decision, every partnership, and every interaction with the children and families we serve.</p>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-row">
+            <div class="value-num">01</div>
+            <div class="value-body">
+              <h4>Compassion</h4>
+              <p>Every child with cancer deserves care that sees the whole child and the whole family — not just the disease.</p>
+            </div>
+          </div>
+          <div class="value-row">
+            <div class="value-num">02</div>
+            <div class="value-body">
+              <h4>Inclusivity</h4>
+              <p>We serve all children and families regardless of background, religion, ethnicity, or economic status, without discrimination.</p>
+            </div>
+          </div>
+          <div class="value-row">
+            <div class="value-num">03</div>
+            <div class="value-body">
+              <h4>Integrity</h4>
+              <p>We hold ourselves to the highest standards of honesty and ethical conduct in all that we do.</p>
+            </div>
+          </div>
+          <div class="value-row">
+            <div class="value-num">04</div>
+            <div class="value-body">
+              <h4>Transparency</h4>
+              <p>As stewards of entrusted resources, we commit to open financial reporting and annual audited accounts.</p>
+            </div>
+          </div>
+          <div class="value-row">
+            <div class="value-num">05</div>
+            <div class="value-body">
+              <h4>Knowledge</h4>
+              <p>We invest in research, education, and awareness because an informed community is a community that can act.</p>
+            </div>
+          </div>
+          <div class="value-row">
+            <div class="value-num">06</div>
+            <div class="value-body">
+              <h4>Faith</h4>
+              <p>We are guided by the conviction that doing good unto a child is an act of service to something greater than ourselves.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-foot" style="line-height: 0.45;" data-cc-id="cc-25"><b style="line-height: 0.45;">UCCF</b> · Vision, Mission, Values</div>
+    <div class="page-num">03</div>
+  </section>
+
+  <!-- =========================================================
+       PAGE 4 — THE CHALLENGE + IMPACT + QUOTE
+  ========================================================= -->
+  <section class="page" data-screen-label="04 Challenge &amp; Impact">
+    <div class="p-body" data-cc-id="cc-2">
+      <div class="masthead">
+        <img src="assets/logo-color-wide.png" alt="UCCF">
+        <div class="run">The Challenge · Impact</div>
+      </div>
+
+      <div class="eyebrow">The challenge</div>
+
+      <div class="challenge-hero" data-cc-id="cc-9">
+        <h1>An urgent, <span class="accent">underaddressed</span> crisis.</h1>
+        <p data-cc-id="cc-18">Childhood cancer is one of Uganda's most urgent and underaddressed public health challenges. Uganda records an estimated <b style="color:var(--uccf-yellow)">3,200 new childhood cancer cases</b> every year, yet only one in three children ever accesses specialised treatment. New diagnoses at the Uganda Cancer Institute alone rose from 700 in 2022 to 800 in 2025 — a 14% increase in just three years — reflecting a burden that is growing faster than the system's capacity to respond.</p>
+        <p style="margin-top:3mm" data-cc-id="cc-15">Over 80% of children who do access treatment receive it at the Uganda Cancer Institute, where survival rates remain below 35% — far below the over 90% cure rates achieved in high-income countries. Put plainly: for every ten children who begin treatment at UCI, fewer than four will survive — not because treatment is unavailable, but because they could not stay in it. The leading driver of this tragedy is treatment abandonment: families forced to discontinue care because they cannot afford transport, accommodation, daily nutrition, or essential medications. For a child in the middle of chemotherapy, missing even a few sessions can be fatal.</p>
+        <p style="margin-top:3mm" data-cc-id="cc-10">UCCF exists to close this gap — not by replacing the health system, but by ensuring that every child already within it has the support they need to remain in care, complete their treatment, and survive.</p>
+
+        <div class="stat-row" data-cc-id="cc-8">
+          <div><div class="num">3,200</div><div class="lbl" style="" data-cc-id="cc-19">New childhood cancer cases in Uganda every year</div></div>
+          <div><div class="num" data-cc-id="cc-16">1 in 3</div><div class="lbl" data-cc-id="cc-17" style="">Children ever access specialised treatment</div></div>
+          <div><div class="num">&lt; 35%</div><div class="lbl" style="" data-cc-id="cc-20">Survival rate at UCI (vs 90%+ in high-income countries)</div></div>
+        </div>
+      </div>
+
+      <div style="margin-top:7mm; display:flex; justify-content: space-between; align-items: baseline;" data-cc-id="cc-11">
+        <div class="eyebrow">Impact at a glance</div>
+        <div style="font-size:8pt; letter-spacing:.2em; text-transform:uppercase; color: var(--uccf-navy-60); font-weight:500">18 years · one mission</div>
+      </div>
+
+      <div class="impact-grid">
+        <div class="impact-card y">
+          <div class="big">1,000+</div>
+          <div class="lbl">children supported annually</div>
+        </div>
+        <div class="impact-card">
+          <div class="big">200+</div>
+          <div class="lbl">schools in the 3C network</div>
+        </div>
+        <div class="impact-card b">
+          <div class="big">18+</div>
+          <div class="lbl">years of service</div>
+        </div>
+        <div class="impact-card" data-cc-id="cc-14">
+          <div class="big" data-cc-id="cc-12">4+</div>
+          <div class="lbl" data-cc-id="cc-13">research projects since 2023</div>
+        </div>
+      </div>
+
+      <div class="quote-block" data-cc-id="cc-4">
+        <div class="quote-photo">
+          <img src="photos/moses.jpg" alt="Moses Echodu, Executive Director, UCCF" style="object-position: center 15%;" data-cc-id="cc-3">
+        </div>
+        <div class="quote-body" data-cc-id="cc-6">
+          <div class="mark">“</div>
+          <blockquote data-cc-id="cc-5">No child battling cancer in Uganda should be left behind. Every child deserves a fighting chance — regardless of where they come from or what their family can afford. That is not an aspiration. It is a commitment.</blockquote>
+          <cite data-cc-id="cc-7">— Moses Echodu, Executive Director, UCCF</cite>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-foot"><b>UCCF</b> · The Challenge</div>
+    <div class="page-num">04</div>
+  </section>
+
+  <!-- =========================================================
+       PAGE 5 — PROGRAMMES DIVIDER + PATIENT SUPPORT part 1
+  ========================================================= -->
+  <section class="page" data-screen-label="05 Patient Support I">
+    <div class="p-body" style="padding:0;">
+      <div class="banner-photo">
+        <img src="photos/p6.jpeg" alt="A child on a play vehicle in the ward's recovery area.">
+        <div class="tint" data-cc-id="cc-1"></div>
+        <div class="overlay-eyebrow">Our Programmes</div>
+        <div class="overlay-box" style="right:var(--margin-x); left:auto;">Four pillars. One child at the centre.</div>
+      </div>
+
+      <div style="padding: 10mm var(--margin-x) 0;">
+        <div class="programme-head">
+          <div class="programme-num">01</div>
+          <div>
+            <div class="tag">Programme one</div>
+            <h1>Patient Support</h1>
+          </div>
+        </div>
+        <p class="lead">UCCF provides direct, life-enabling support to over 1,000 children annually at the Uganda Cancer Institute. Our interventions address the full spectrum of barriers — medical and non-medical — that most frequently prevent children from completing treatment. Without this support, many families simply cannot navigate the journey from diagnosis to cure.</p>
+
+        <div class="prog-list">
+          <div class="prog-item">
+            <h3>Medical Diagnostics</h3>
+            <p>Accurate and timely diagnosis is the foundation of effective cancer treatment, yet many families arrive at UCI unable to afford the tests required to begin or monitor their child's care. UCCF bridges this gap by funding essential diagnostic requirements including blood tests (full blood counts, tumour markers, liver and kidney function panels), imaging services such as X-rays, ultrasounds, CT scans and MRI scans, as well as biopsies and histopathology. These diagnostics must be repeated throughout a child's treatment cycle to monitor response, adjust protocols, and detect complications early. Without them, clinicians cannot treat safely, and children cannot progress.</p>
+          </div>
+          <div class="prog-item">
+            <h3>Cancer Medication in Conjunction with UCI</h3>
+            <p>Chemotherapy and other cancer-directed therapies are at the core of childhood cancer treatment. UCCF works in close partnership with UCI to ensure children have access to the medications prescribed under their treatment protocols. While UCI provides significant subsidised care, gaps in drug availability — caused by supply chain disruptions, shortages, or the need for specialist medications not routinely stocked — can interrupt treatment at critical moments. UCCF intervenes to procure and supply these medications, ensuring that treatment protocols are not broken. Incomplete treatment not only reduces the chance of survival — in some cancers, it actively increases the risk of drug-resistant relapse.</p>
+          </div>
+          <div class="prog-item">
+            <h3>Supportive Medications</h3>
+            <p>Cancer treatment takes a severe toll on the body. Chemotherapy suppresses the immune system, damages the gut lining, causes pain, and leaves children vulnerable to infections that can be life-threatening during treatment. UCCF funds antibacterials and antifungals to prevent and treat infections in immunocompromised children, antivirals to protect against viral complications, pain management medications, immune boosters and growth factors to rebuild white blood cell counts, and anti-nausea medications to manage side effects that, left unaddressed, cause rapid deterioration. These medications do not treat cancer directly — but without them, children cannot tolerate the treatment that does.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-foot"><b>UCCF</b> · Our Programmes — Patient Support</div>
+    <div class="page-num">05</div>
+  </section>
+
+  <!-- =========================================================
+       PAGE 6 — PATIENT SUPPORT continued
+  ========================================================= -->
+  <section class="page" data-screen-label="06 Patient Support II">
+    <div class="p-body">
+      <div class="masthead">
+        <img src="assets/logo-color-wide.png" alt="UCCF">
+        <div class="run">Patient Support · continued</div>
+      </div>
+
+      <div class="aside-photo">
+        <img src="photos/p2.jpeg" alt="Children in the chemotherapy chair during treatment.">
+        <div class="cap">Children receiving chemotherapy at UCI.</div>
+      </div>
+
+      <div class="prog-list">
+        <div class="prog-item">
+          <h3>Nutrition</h3>
+          <p>Malnutrition is one of the most significant and underappreciated barriers to childhood cancer survival in Uganda. Children undergoing chemotherapy have dramatically increased nutritional needs at exactly the moment when their appetite is suppressed, their gut is damaged, and their families are least able to provide adequate food. Poor nutrition reduces a child's ability to tolerate chemotherapy, increases treatment-related complications, slows recovery, and directly reduces survival rates. Since launching our Nutrition Programme in 2023, UCCF has provided daily, nutritionally balanced meals to up to 150 children in the paediatric oncology ward at UCI — with measurable improvements in treatment completion rates. For many of these children, the meal provided by UCCF is the only meal they will receive that day.</p>
+        </div>
+        <div class="prog-item">
+          <h3>Transport Facilitation</h3>
+          <p>Many families travel hundreds of kilometres to reach UCI, and treatment requires repeated journeys over weeks and months. Transport cost is, for many families, the single most decisive factor in whether a child completes treatment. UCCF provides direct transport support — funding bus fares and boda-boda costs, and in urgent cases arranging dedicated transport — to ensure distance and poverty are never the reason a child misses a scheduled session.</p>
+        </div>
+        <div class="prog-item">
+          <h3>Psychosocial Counselling and Play Therapy</h3>
+          <p>A cancer diagnosis is a profound psychological trauma for the child and the entire family. UCCF provides individual and group counselling for children and caregivers alongside structured play therapy and expressive arts programmes, helping children process their experience, maintain a sense of normalcy, and stay emotionally connected. A child who feels safe, seen, and supported is far more likely to complete treatment than one who does not.</p>
+        </div>
+        <div class="prog-item">
+          <h3>WASH Programme</h3>
+          <p>Immunocompromised children are acutely vulnerable to infections arising from contaminated water or poor sanitation. UCCF's WASH Programme supports safe water access, hygiene education, and improved sanitation conditions within the treatment environment — reducing infection-related treatment interruptions.</p>
+        </div>
+        <div class="prog-item">
+          <h3>Caretaker Support</h3>
+          <p>Behind every child with cancer is a caretaker who has left their home and livelihood to be present at UCI. UCCF recognises caretakers explicitly as beneficiaries — providing counselling, peer support, and practical assistance to ensure they can sustain the commitment their child's treatment demands.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-foot"><b>UCCF</b> · Patient Support</div>
+    <div class="page-num">06</div>
+  </section>
+
+  <!-- =========================================================
+       PAGE 7 — EDUCATION & AWARENESS
+  ========================================================= -->
+  <section class="page" data-screen-label="07 Education &amp; Awareness">
+    <div class="p-body">
+      <div class="masthead">
+        <img src="assets/logo-color-wide.png" alt="UCCF">
+        <div class="run">Programme two · Education &amp; Awareness</div>
+      </div>
+
+      <div class="programme-head">
+        <div class="programme-num blue">02</div>
+        <div>
+          <div class="tag">Programme two</div>
+          <h1>Education and Awareness</h1>
+        </div>
+      </div>
+      <p class="lead">Childhood cancer is largely invisible in Uganda. Most families have never heard of the diseases that will one day threaten their children's lives. By the time a parent recognises that something is wrong, the cancer has often progressed to an advanced stage — dramatically reducing the chance of survival. Early detection is the difference between a curable disease and a fatal one. UCCF's education and awareness programmes exist to close this knowledge gap — building a Uganda where communities, schools, health workers, and policymakers understand childhood cancer well enough to act on it early.</p>
+
+      <div class="prog-list has-float">
+        <div class="aside-photo left large">
+          <img src="photos/p10.jpeg" alt="A child laughs with their caregiver in the ward — a moment of joy.">
+          <div class="cap">A moment of joy — the ward at UCI.</div>
+        </div>
+        <div class="prog-item">
+          <h3>3C Programme — Children Caring about Cancer</h3>
+          <p>Launched in 2010 and now active in over 200 schools across Uganda, the 3C Programme places cancer awareness directly in the hands of young people — the generation most likely to recognise early symptoms and the future community leaders who will shape Uganda's response to cancer for decades to come. Each school hosts a student-led 3C Club that designs its own cancer awareness activities, organises fundraising, and hosts events. The annual 3C Christmas Party — traditionally hosted at Namagunga Girls School — is a celebration of student leadership and community solidarity. 3C members are among the most passionate participants in the Childhood Cancer Colour Run each year.</p>
+        </div>
+        <div class="prog-item">
+          <h3>Community Outreach</h3>
+          <p>Cancer stigma remains a significant barrier to early diagnosis. Families conceal diagnoses out of shame, delay seeking care out of fear, or turn to traditional healers — losing critical weeks in which treatment would have been most effective. UCCF's outreach programmes bring accurate, compassionate information directly into affected communities, working with local leaders, religious institutions, village health teams, and women's groups to build awareness of warning signs and the support available at UCI.</p>
+        </div>
+        <div class="prog-item">
+          <h3>Health Worker Training and Engagement</h3>
+          <p>Many childhood cancers are first encountered not at a specialist centre but at a district hospital or health centre. UCCF engages with frontline health workers across Uganda to build confidence in recognising childhood cancer — reducing the diagnostic delays that allow cancers to progress to advanced, harder-to-treat stages before a child ever reaches UCI.</p>
+        </div>
+        <div class="prog-item">
+          <h3>Media Campaigns</h3>
+          <p>UCCF uses radio, television, print, digital, and social media to raise national awareness of childhood cancer — its signs, its treatability, and the support available. Strategic media engagement around Childhood Cancer Awareness Month and the Colour Run places childhood cancer in the national conversation and normalises the idea that cancer in children, with early detection and the right support, can be overcome.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-foot"><b>UCCF</b> · Education and Awareness</div>
+    <div class="page-num">07</div>
+  </section>
+
+  <!-- =========================================================
+       PAGE 8 — RESEARCH
+  ========================================================= -->
+  <section class="page" data-screen-label="08 Research">
+    <div class="p-body">
+      <div class="masthead">
+        <img src="assets/logo-color-wide.png" alt="UCCF">
+        <div class="run">Programme three · Research</div>
+      </div>
+
+      <div class="programme-head">
+        <div class="programme-num navy">03</div>
+        <div>
+          <div class="tag">Programme three</div>
+          <h1>Research</h1>
+        </div>
+      </div>
+      <p class="lead">Data saves lives. In the fight against childhood cancer, the absence of reliable data is not merely an academic inconvenience — it is a direct obstacle to saving children. Without knowing how many children are diagnosed, where they come from, what cancers they have, how they respond to treatment, and why they abandon care, it is impossible to design effective interventions, make the case for policy change, or attract the international funding that could transform outcomes. Research is therefore not peripheral to UCCF's mission — it is foundational to it.</p>
+
+      <div class="prog-list compact">
+        <div class="prog-item">
+          <h3>Paediatric Cancer Registry</h3>
+          <p>UCCF is working in close partnership with UCI to develop and maintain a comprehensive national paediatric cancer registry — systematically capturing data on every child diagnosed with cancer at UCI, recording diagnoses, treatment protocols, outcomes, and barriers to care. For the first time, Uganda will have a reliable longitudinal dataset on childhood cancer that can inform clinical practice, guide resource allocation, support policy advocacy, and provide the evidence base that international funders and research partners require. The registry is not just a database — it is the infrastructure on which Uganda's entire childhood cancer response can be built and improved.</p>
+        </div>
+        <div class="prog-item">
+          <h3>Original Research</h3>
+          <p>UCCF's research programme, reactivated in 2023, has supported over four original research projects and contributed to two joint studies with UCI spanning prevention, early detection, treatment response, palliative care, and survivorship. Findings are shared with the medical community, policymakers, and international partners to drive evidence-based improvements in childhood cancer management.</p>
+        </div>
+        <div class="prog-item">
+          <h3>Treatment Abandonment Research</h3>
+          <p>Understanding why families discontinue treatment is essential to preventing it. UCCF's research in this area examines the financial, geographic, social, and psychological factors behind treatment abandonment — providing the evidence needed to design targeted interventions that address root causes rather than symptoms.</p>
+        </div>
+        <div class="prog-item">
+          <h3>International Partnerships and Representation</h3>
+          <p>UCCF participates actively in the global childhood cancer research community. Our leadership has represented Uganda at the ASCO Annual Meeting, the St. Jude Global Alliance Sub-Saharan Africa Convention, the ALSAC Global Convening (500+ participants from 68 countries), and the 4th Global NCD Alliance Forum in Kigali — advocating for the inclusion of low-income country perspectives in global research and policy agendas.</p>
+        </div>
+        <div class="prog-item">
+          <h3>Informing Policy and Advocacy</h3>
+          <p>Every statistic in our advocacy materials, every policy brief we submit, and every partnership we seek is grounded in evidence. UCCF uses research findings and registry data to make the case — to government, funders, and the public — for greater investment in childhood cancer prevention, diagnosis, and treatment in Uganda.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-foot"><b>UCCF</b> · Research</div>
+    <div class="page-num">08</div>
+  </section>
+
+  <!-- =========================================================
+       PAGE 9 — RESOURCE MOBILISATION & PARTNERS
+  ========================================================= -->
+  <section class="page" data-screen-label="09 Resource Mobilisation &amp; Partners">
+    <div class="p-body">
+      <div class="masthead">
+        <img src="assets/logo-color-wide.png" alt="UCCF">
+        <div class="run">Programme four · Partners</div>
+      </div>
+
+      <div class="programme-head">
+        <div class="programme-num">04</div>
+        <div>
+          <div class="tag">Programme four</div>
+          <h1>Resource Mobilisation &amp; Advocacy</h1>
+        </div>
+      </div>
+      <p class="body">UCCF mobilises the financial and political resources needed to sustain and expand its impact, while advocating for improved prioritisation and resource allocation for childhood cancer at policy level.</p>
+
+      <div class="prog-list compact" style="margin-top:3mm">
+        <div class="prog-item">
+          <h3>Childhood Cancer Colour Run</h3>
+          <p>Uganda's fastest-growing cancer awareness and fundraising event, entering its 4th edition on 17th May 2026 with a target of 5,000–6,000 participants and a UGX 250 million fundraising goal. Participation has grown from 900 (2023) → 2,500 (2024) → 4,000 (2025), making it one of Uganda's most dynamic community health events.</p>
+        </div>
+        <div class="prog-item">
+          <h3>Guardian Angel Programme</h3>
+          <p>A monthly giving initiative enabling individuals and organisations to make consistent contributions towards the day-to-day needs of children in treatment.</p>
+        </div>
+        <div class="prog-item">
+          <h3>Annual Dinner and Birthday Celebrations</h3>
+          <p>Community engagement events building long-term relationships with supporters and donors.</p>
+        </div>
+        <div class="prog-item">
+          <h3>In-Kind Donations</h3>
+          <p>Partnerships with businesses providing food, medicines, transport, and supplies directly supporting patient care.</p>
+        </div>
+        <div class="prog-item">
+          <h3>Policy Advocacy</h3>
+          <p>Engagement with government and civil society networks to demand better policy, funding, and service delivery for childhood cancer in Uganda.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 6mm; padding-top: 4mm; border-top: 2px solid var(--uccf-navy);">
+        <div style="display:flex; justify-content: space-between; align-items: baseline; gap: 6mm;">
+          <div>
+            <div class="eyebrow" style="margin-bottom:2mm">Partners and recognition</div>
+            <h1 class="section" style="font-size: 15pt; margin:0;">A network of national and global partners.</h1>
+          </div>
+          <p class="body" style="max-width:75mm; margin:0; font-size:8.5pt; line-height:1.4;">UCCF works within a network of respected national and international partners, reflecting its standing as a credible, accountable, and impactful organisation.</p>
+        </div>
+
+        <div class="partners-grid">
+          <div class="partner-chip">
+            <div class="dot">U</div>
+            <div><h4>Uganda Cancer Institute</h4><p>UCCF's primary institutional partner, with whom all patient support and research activities are conducted.</p></div>
+          </div>
+          <div class="partner-chip">
+            <div class="dot">SJ</div>
+            <div><h4>St. Jude Global Alliance</h4><p>UCCF is a member of this worldwide network of institutions committed to improving childhood cancer outcomes.</p></div>
+          </div>
+          <div class="partner-chip">
+            <div class="dot">CC</div>
+            <div><h4>Childhood Cancer International</h4><p>UCCF is affiliated with the world's largest network of childhood cancer patient organisations.</p></div>
+          </div>
+          <div class="partner-chip">
+            <div class="dot">A</div>
+            <div><h4>ASCO</h4><p>UCCF leadership has participated in the ASCO Annual Meeting, engaging with global oncology leaders on evidence and advocacy.</p></div>
+          </div>
+          <div class="partner-chip">
+            <div class="dot">NC</div>
+            <div><h4>4th Global NCD Alliance Forum</h4><p>UCCF represented Uganda at this international non-communicable disease policy forum in Kigali (2025).</p></div>
+          </div>
+          <div class="partner-chip">
+            <div class="dot">CP</div>
+            <div><h4>Corporate Partners</h4><p>Crown Beverages, Roke Telkom, and a growing number of Uganda's leading businesses have partnered with UCCF in support of the Colour Run and patient programmes.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-foot" style="text-align: left; line-height: 0.45;" data-cc-id="cc-24"><b style="text-align: left; line-height: 0.45;">UCCF</b> · Resource Mobilisation &amp; Partners</div>
+    <div class="page-num">09</div>
+  </section>
+
+  <!-- =========================================================
+       PAGE 10 — FINANCIAL PROBITY + LOOKING AHEAD + PARTNER WITH US
+  ========================================================= -->
+  <section class="page" data-screen-label="10 Probity &amp; Looking Ahead">
+    <div class="p-body">
+      <div class="masthead">
+        <img src="assets/logo-color-wide.png" alt="UCCF">
+        <div class="run" style="" data-cc-id="cc-22">Looking ahead</div>
+      </div>
+
+      <div class="eyebrow" style="" data-cc-id="cc-21">Our commitment to financial Transparency</div>
+      <h1 class="section" style="font-size:22pt;">Every contribution represents trust.</h1>
+
+      <p class="body">UCCF holds itself to the highest standards of financial accountability and transparency. We understand that every contribution — whether from an individual, a corporation, or an institutional donor — represents trust. That trust is not taken lightly.</p>
+      <p class="body">UCCF's accounts are audited annually by Ernst &amp; Young Uganda, one of the world's leading professional services firms, ensuring that our financial management meets rigorous international standards. Our reporting is aligned with the financial governance frameworks applied to global non-governmental organisations, providing donors with the assurance that resources entrusted to UCCF are managed with integrity, used purposefully, and accounted for transparently.</p>
+      <p class="body">Audited financial statements are available to donors and partners on request. We believe that openness about how we use resources is not merely good governance — it is a moral obligation to the children we serve and the people who make our work possible.</p>
+
+      <div class="probity">
+        <div class="seal">Audited<br>Annually<br>EY&nbsp;UG</div>
+        <div>
+          <h3>Audited by Ernst &amp; Young Uganda</h3>
+          <p>Aligned with international NGO governance standards. Audited financial statements available on request.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 10mm;">
+        <div class="eyebrow">Looking ahead</div>
+        <h1 class="section" style="font-size: 20pt;">2026 – 2027 and beyond.</h1>
+
+        <div class="ahead-grid">
+          <div class="ahead-card">
+            <div class="big-number">1,000+</div>
+            <h3 style="margin-top:2mm">Children supported in 2026–2027</h3>
+            <p>Our 2026–2027 programme cycle targets direct support for over 1,000 children through nutrition, transport, psychosocial care, and essential medicines — with a fundraising target of UGX 250 million through the 2026 Colour Run. Our immediate priority is ensuring that no child currently in treatment at UCI is forced to abandon care due to financial barriers.</p>
+          </div>
+          <div class="ahead-card blue">
+            <div class="big-number">UGX 43M</div>
+            <h3 style="margin-top:2mm">Towards the children's patient hostel</h3>
+            <p>Looking further ahead, UCCF is working towards the construction of a dedicated children's patient hostel on the UCI campus — a safe, comfortable home where children travelling from across Uganda can stay during extended treatment cycles. The hostel remains UCCF's defining long-term ambition: not just a building, but a home where a child can play, rest, and heal — and not feel like they are in a hospital.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-foot" style="" data-cc-id="cc-23"><b>UCCF</b> · Looking Ahead</div>
+    <div class="page-num">10</div>
+  </section>
+
+  <!-- =========================================================
+       PAGE 11 — PARTNER WITH US + CONTRIBUTE (part 1)
+  ========================================================= -->
+  <section class="page" data-screen-label="11 Partner With Us">
+    <div class="p-body" style="padding: 0;">
+      <div class="banner-photo" style="height:60mm">
+        <img src="photos/p7.jpeg" alt="A child held by a caregiver in a moment of tenderness.">
+        <div class="tint"></div>
+        <div class="overlay-eyebrow">Partner with us</div>
+        <div class="overlay-box">Every gift keeps a child in treatment.</div>
+      </div>
+
+      <div style="padding: 8mm var(--margin-x) 0;">
+        <p class="lead">UCCF's work depends entirely on the generosity of individuals, businesses, and institutions who believe that every child deserves a fair chance at life, regardless of where they were born or what their family can afford. There are many ways to support us:</p>
+
+        <ul class="ways-list">
+          <li>Financial contributions and sponsorship of our programmes and events</li>
+          <li>In-kind support — food, medicines, transport, equipment, and supplies</li>
+          <li>Corporate partnerships aligned to your CSR strategy</li>
+          <li>Monthly giving through the Guardian Angel Programme</li>
+          <li style="grid-column: 1 / -1">Advocacy and awareness — using your platform to amplify our cause</li>
+        </ul>
+
+        <div style="margin-top: 8mm;" class="cta-card">
+          <div>
+            <div class="eyebrow" style="color:var(--uccf-navy); margin:0 0 2mm;">To explore how your organisation can partner with UCCF</div>
+            <h3>Please contact us directly.</h3>
+            <p>We welcome conversations with individuals, corporates, and institutions who want to build long-term partnerships around the children we serve.</p>
+          </div>
+          <div class="contact-block">
+            <b>Moses Echodu</b>
+            Executive Director<br>
+            moses.echodu@uccfug.org<br>
+            +256 700 589 714<br>
+            www.uccfug.org
+          </div>
+        </div>
+
+        <div style="margin-top: 10mm; border-top: 2.5px solid var(--uccf-navy); padding-top: 6mm;">
+          <div class="eyebrow">How to contribute</div>
+          <h1 class="section" style="font-size:22pt;">Five ways to give.</h1>
+          <p class="body">Every contribution to UCCF — regardless of size or form — directly saves the life of a child with cancer in Uganda. Your support funds the diagnostics, medications, nutrition, transport, and psychosocial care that keep children in treatment and give them a fighting chance at survival. Below are the ways you can contribute.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-foot"><b>UCCF</b> · Partner with us</div>
+    <div class="page-num">11</div>
+  </section>
+
+  <!-- =========================================================
+       PAGE 12 — HOW TO CONTRIBUTE (cards)
+  ========================================================= -->
+  <section class="page" data-screen-label="12 How to Contribute">
+    <div class="p-body" data-cc-id="cc-43">
+      <div class="masthead">
+        <img src="assets/logo-color-wide.png" alt="UCCF">
+        <div class="run">How to contribute</div>
+      </div>
+
+
+      <div class="contribute-grid" style="margin-top:2mm" data-cc-id="cc-42">
+        <div class="contrib-card" data-cc-id="cc-32" style="height: 390.333px;">
+          <span class="step" style="letter-spacing: 2.34667px;" data-cc-id="cc-45">Option 01</span>
+          <h3 style="" data-cc-id="cc-44">Online Donation Form</h3>
+          <p>The quickest and easiest way to make a contribution is through our secure online donation form. You can make a one-time gift or set up a recurring monthly contribution.</p>
+          <div style="font-size: 8pt; letter-spacing:.18em; text-transform: uppercase; color: var(--uccf-navy-60); font-weight: 700; margin-top:3mm; margin-bottom:4mm;">Scan to Donate</div>
+          <div style="display:flex; justify-content:center; padding: 2mm 0 1mm;" data-cc-id="cc-40">
+            <img src="assets/qr-donate.png" alt="QR code — scan to donate online" style="width:36mm; height:36mm; object-fit:contain; border: 2px solid var(--uccf-navy-20); border-radius: 3mm; padding: 3mm; background:#fff;">
+          </div>
+          <p style="font-size:8pt; text-align:center; color:var(--uccf-navy-60); margin:3mm 0 0; letter-spacing:.06em;">Scan with your phone camera</p>
+        </div>
+
+        <div class="contrib-card" style="background: var(--uccf-yellow)" data-cc-id="cc-33">
+          <span class="step" style="color:var(--uccf-navy)">Option 02</span>
+          <h3>MTN Mobile Money</h3>
+          <p>Send your contribution directly via MTN Mobile Money using the UCCF merchant code. Available to all MTN Uganda subscribers — instant, secure, and fully traceable.</p>
+          <div style="font-size: 8pt; letter-spacing:.18em; text-transform: uppercase; color: var(--uccf-navy); font-weight: 700; margin-top:3mm">MTN Mobile Money — Merchant Payment</div>
+          <div class="kv" style="background: rgba(255,255,255,.55)" data-cc-id="cc-35">
+            <div class="k">Merchant Code</div><div class="v">622764</div>
+            <div class="k">Account Name</div><div class="v" style="" data-cc-id="cc-34">Uganda Child Cancer Foundation</div>
+          </div>
+          <p style="margin-top:3mm; font-size:8.5pt"><b>Dial *165#</b> → Select 'Pay Merchant' → Enter code 622764 → Enter amount → Confirm</p>
+        </div>
+
+        <div class="contrib-card" style="grid-column: 1 / -1" data-cc-id="cc-38">
+          <span class="step">Option 03</span>
+          <h3 style="" data-cc-id="cc-39">Bank Transfer</h3>
+          <p style="font-size:8.5pt; margin-bottom:2mm">For corporate contributions, larger donations, or international transfers, pay directly into the UCCF account at DFCU Bank Uganda. Please use your name or organisation name as the payment reference.</p>
+          <div style="font-size: 8pt; letter-spacing:.18em; text-transform: uppercase; color: var(--uccf-navy-60); font-weight: 700; margin-top:2mm">Bank Transfer Details</div>
+          <div class="kv" style="grid-template-columns: 28mm 1fr 28mm 1fr; gap: 1mm 3mm;">
+            <div class="k">Bank Name</div><div class="v">DFCU Bank Uganda</div>
+            <div class="k">Account Name</div><div class="v">Uganda Child Cancer Foundation</div>
+            <div class="k">Account Number</div><div class="v" style="" data-cc-id="cc-37">01360011682073</div>
+            <div class="k">Branch</div><div class="v">Kyadondo Branch</div>
+            <div class="k">SWIFT Code</div><div class="v">DFCUUGKA</div>
+            <div class="k">Confirm to</div><div class="v">info@uccfug.org</div>
+          </div>
+          <p style="margin-top:3mm; font-size:8.5pt">Please email <b>info@uccfug.org</b> with your transfer confirmation so we can acknowledge your contribution promptly.</p>
+        </div>
+
+        <div class="contrib-card" data-cc-id="cc-31">
+          <span class="step">Option 04</span>
+          <h3 style="" data-cc-id="cc-30">In-Kind Contributions</h3>
+          <p>We welcome donations of goods and services that directly support children in our care — including food and nutritional supplies, medicines and medical consumables, transport and fuel, stationery, toys and play materials, and professional services such as printing or event support. Please contact us before arranging an in-kind delivery so we can confirm current needs and coordinate receipt.</p>
+        </div>
+
+        <div class="contrib-card" style="background: var(--uccf-navy); color: var(--uccf-cream);">
+          <span class="step" style="color: var(--uccf-yellow)">Option 05</span>
+          <h3 style="color: var(--uccf-cream)">Guardian Angel Programme</h3>
+          <p style="color: rgba(255, 253, 242, 0.88);" data-cc-id="cc-41">The Guardian Angel Programme is UCCF's monthly giving initiative for individuals and organisations who want to make a consistent, ongoing difference. By committing to a regular monthly contribution — however modest — Guardian Angels provide UCCF with the reliable, predictable funding that allows us to plan, sustain, and expand our programmes. To join, complete the online donation form and select the recurring monthly option, or contact Moses Echodu directly.</p>
+        </div>
+      </div>
+
+      
+    </div>
+
+    
+    <div class="page-num">12</div>
+  </section>
+
+  <!-- =========================================================
+       PAGE 13 — CLOSING
+  ========================================================= -->
+  <section class="page closing" data-screen-label="13 Closing">
+    <div class="closing-banner">
+      <img src="photos/p8.jpeg" alt="Smiling children and caregivers in the ward.">
+      <div class="tint"></div>
+    </div>
+
+    <div class="closing-body" data-cc-id="cc-29">
+      <div style="font-size: 9pt; letter-spacing: .3em; text-transform: uppercase; color: var(--uccf-yellow); margin-bottom: 5mm; font-weight:700">Our vision</div>
+      <h1>A society free of childhood cancer.</h1>
+      <p>Every child deserves a chance. With your partnership, we can ensure that no child in Uganda is left behind — that every child who enters treatment has the support they need to stay in it, complete it, and go home.</p>
+      <img src="assets/logo-white-wide.png" alt="UCCF" style="height: 16mm; margin-top: 4mm;">
+    </div>
+
+    <div class="closing-foot">
+      <div class="block" style="" data-cc-id="cc-27">
+        <b>Visit</b>
+        Uganda Cancer Institute<br>
+        Upper Mulago Hill Rd, Kampala
+      </div>
+      <div class="block">
+        <b>Call &amp; write</b>
+        +256 392 834 441<br>
+        info@uccfug.org
+      </div>
+      <div class="block" style="" data-cc-id="cc-28">
+        <b>Online</b>
+        www.uccfug.org</div>
+    </div>
+  </section>
+
+</div>
+
+
+
+</body></html>

@@ -1,0 +1,222 @@
+[] 
+[] UGANDA CHILD CANCER FOUNDATION
+  RUNS: [{"bold":true,"text":"UGANDA CHILD CANCER FOUNDATION"}]
+[] Organisational Profile  |  2026
+[] 
+[] 
+[] Uganda Cancer Institute Campus, Upper Mulago Hill, Kampala
+[] info@uccfug.org  |  www.uccfug.org  |  +256 392 834 441
+[] A society free of childhood cancer.
+  RUNS: [{"bold":true,"text":"A society free of childhood cancer."}]
+[] 
+[] OUR STORY
+  RUNS: [{"bold":true,"text":"OUR STORY"}]
+[] In 2006, a group of doctors, nurses, and parents gathered at the Uganda Cancer Institute with a shared conviction: that the children in their care deserved more than medicine alone. These were families who had travelled hundreds of kilometres to reach Kampala, only to face the prospect of watching their children abandon treatment because they could not afford a bus fare home, a meal, or the emotional support to keep going. The medical system was doing its part — but the system had gaps, and those gaps were costing children their lives.
+[] From that gathering, the Uganda Child Cancer Foundation was born. It was Uganda's first civil society organisation dedicated exclusively to childhood cancer, built not by outsiders or institutions, but by the people closest to the children themselves. Nearly two decades later, that founding spirit — practical, compassionate, and uncompromising — remains at the heart of everything UCCF does.
+[] WHO WE ARE
+  RUNS: [{"bold":true,"text":"WHO WE ARE"}]
+[] The Uganda Child Cancer Foundation (UCCF) is a nationally registered Non-Governmental Organisation (Registration No. S.5914/6566), operating from the campus of the Uganda Cancer Institute — at the very heart of Uganda's paediatric oncology system. In close partnership with UCI, UCCF provides the critical non-medical support that enables children to access, remain in, and complete cancer treatment.
+[] From its origins as a small psychosocial support group, UCCF has grown into a nationally recognised foundation with integrated programmes spanning patient support, education and awareness, research, and advocacy — reaching over 1,000 children annually and touching communities across Uganda through its schools network of over 200 institutions.
+[] VISION, MISSION AND GOAL
+  RUNS: [{"bold":true,"text":"VISION, MISSION AND GOAL"}]
+[] 
+[] Vision
+  RUNS: [{"bold":true,"text":"Vision"}]
+[] A society free of childhood cancer.
+[] 
+[] Mission
+  RUNS: [{"bold":true,"text":"Mission"}]
+[] To contribute towards effective childhood cancer control through patient support, awareness creation, advocacy, research, and mentorship.
+[] 
+[] Goal
+  RUNS: [{"bold":true,"text":"Goal"}]
+[] To facilitate informed decision-making, evidence-based policy change, and life skills for healthy, productive, and empowered communities — as well as better treatment outcomes for children with cancer.
+[] 
+[] OUR VALUES
+  RUNS: [{"bold":true,"text":"OUR VALUES"}]
+[] UCCF's work is grounded in core values that guide every decision, every partnership, and every interaction with the children and families we serve.
+[ListParagraph|LIST] Compassion: Every child with cancer deserves care that sees the whole child and the whole family — not just the disease.
+  RUNS: [{"bold":true,"text":"Compassion:"},{"bold":false,"text":" Every child with cancer deserves care that sees the whole child and the whole family — not just the disease."}]
+[ListParagraph|LIST] Inclusivity: We serve all children and families regardless of background, religion, ethnicity, or economic status, without discrimination.
+  RUNS: [{"bold":true,"text":"Inclusivity:"},{"bold":false,"text":" We serve all children and families regardless of background, religion, ethnicity, or economic status, without discrimination."}]
+[ListParagraph|LIST] Integrity: We hold ourselves to the highest standards of honesty and ethical conduct in all that we do.
+  RUNS: [{"bold":true,"text":"Integrity:"},{"bold":false,"text":" We hold ourselves to the highest standards of honesty and ethical conduct in all that we do."}]
+[ListParagraph|LIST] Transparency: As stewards of entrusted resources, we commit to open financial reporting and annual audited accounts.
+  RUNS: [{"bold":true,"text":"Transparency:"},{"bold":false,"text":" As stewards of entrusted resources, we commit to open financial reporting and annual audited accounts."}]
+[ListParagraph|LIST] Knowledge: We invest in research, education, and awareness because an informed community is a community that can act.
+  RUNS: [{"bold":true,"text":"Knowledge:"},{"bold":false,"text":" We invest in research, education, and awareness because an informed community is a community that can act."}]
+[ListParagraph|LIST] Faith: We are guided by the conviction that doing good unto a child is an act of service to something greater than ourselves.
+  RUNS: [{"bold":true,"text":"Faith:"},{"bold":false,"text":" We are guided by the conviction that doing good unto a child is an act of service to something greater than ourselves."}]
+[] 
+[] THE CHALLENGE
+  RUNS: [{"bold":true,"text":"THE CHALLENGE"}]
+[] Childhood cancer is one of Uganda's most urgent and underaddressed public health challenges. Uganda records an estimated 3,200 new childhood cancer cases every year, yet only one in three children ever accesses specialised treatment. New diagnoses at the Uganda Cancer Institute alone rose from 700 in 2022 to 800 in 2025 — a 14% increase in just three years — reflecting a burden that is growing faster than the system's capacity to respond.
+[] Over 80% of children who do access treatment receive it at the Uganda Cancer Institute, where survival rates remain below 35% — far below the over 90% cure rates achieved in high-income countries. Put plainly: for every ten children who begin treatment at UCI, fewer than four will survive — not because treatment is unavailable, but because they could not stay in it. The leading driver of this tragedy is treatment abandonment: families forced to discontinue care because they cannot afford transport, accommodation, daily nutrition, or essential medications. For a child in the middle of chemotherapy, missing even a few sessions can be fatal.
+[] UCCF exists to close this gap — not by replacing the health system, but by ensuring that every child already within it has the support they need to remain in care, complete their treatment, and survive.
+[] IMPACT AT A GLANCE
+  RUNS: [{"bold":true,"text":"IMPACT AT A GLANCE"}]
+[] 1,000+
+  RUNS: [{"bold":true,"text":"1,000+"}]
+[] children supported annually
+[] 200+
+  RUNS: [{"bold":true,"text":"200+"}]
+[] schools in the 3C network
+[] 18+
+  RUNS: [{"bold":true,"text":"18+"}]
+[] years of service
+[] 4+
+  RUNS: [{"bold":true,"text":"4+"}]
+[] research projects since 2023
+[] 
+[] "No child battling cancer in Uganda should be left behind. Every child deserves a fighting chance — regardless of where they come from or what their family can afford. That is not an aspiration. It is a commitment."
+[] — Moses Echodu, Executive Director, UCCF
+[] 
+[] OUR PROGRAMMES
+  RUNS: [{"bold":true,"text":"OUR PROGRAMMES"}]
+[] 1.  Patient Support
+  RUNS: [{"bold":true,"text":"1.  Patient Support"}]
+[] UCCF provides direct, life-enabling support to over 1,000 children annually at the Uganda Cancer Institute. Our interventions address the full spectrum of barriers — medical and non-medical — that most frequently prevent children from completing treatment. Without this support, many families simply cannot navigate the journey from diagnosis to cure.
+[ListParagraph|LIST] Medical Diagnostics: Accurate and timely diagnosis is the foundation of effective cancer treatment, yet many families arrive at UCI unable to afford the tests required to begin or monitor their child's care. UCCF bridges this gap by funding essential diagnostic requirements including blood tests (full blood counts, tumour markers, liver and kidney function panels), imaging services such as X-rays, ultrasounds, CT scans and MRI scans, as well as biopsies and histopathology. These diagnostics must be repeated throughout a child's treatment cycle to monitor response, adjust protocols, and detect complications early. Without them, clinicians cannot treat safely, and children cannot progress.
+  RUNS: [{"bold":true,"text":"Medical Diagnostics:"},{"bold":false,"text":" Accurate and timely diagnosis is the foundation of effective cancer treatment, yet many families arrive at UCI unable to afford the tests required to begin or monitor their child's care. UCCF bridges this gap by funding essential diagnostic requirements including blood tests (full blood counts, tumour markers, liver and kidney function panels), imaging services such as X-rays, ultrasounds, CT scans and MRI scans, as well as biopsies and histopathology. These diagnostics must be repeated throughout a child's treatment cycle to monitor response, adjust protocols, and detect complications early. Without them, clinicians cannot treat safely, and children cannot progress."}]
+[ListParagraph|LIST] Cancer Medication in Conjunction with UCI: Chemotherapy and other cancer-directed therapies are at the core of childhood cancer treatment. UCCF works in close partnership with UCI to ensure children have access to the medications prescribed under their treatment protocols. While UCI provides significant subsidised care, gaps in drug availability — caused by supply chain disruptions, shortages, or the need for specialist medications not routinely stocked — can interrupt treatment at critical moments. UCCF intervenes to procure and supply these medications, ensuring that treatment protocols are not broken. Incomplete treatment not only reduces the chance of survival — in some cancers, it actively increases the risk of drug-resistant relapse.
+  RUNS: [{"bold":true,"text":"Cancer Medication in Conjunction with UCI:"},{"bold":false,"text":" Chemotherapy and other cancer-directed therapies are at the core of childhood cancer treatment. UCCF works in close partnership with UCI to ensure children have access to the medications prescribed under their treatment protocols. While UCI provides significant subsidised care, gaps in drug availability — caused by supply chain disruptions, shortages, or the need for specialist medications not routinely stocked — can interrupt treatment at critical moments. UCCF intervenes to procure and supply these medications, ensuring that treatment protocols are not broken. Incomplete treatment not only reduces the chance of survival — in some cancers, it actively increases the risk of drug-resistant relapse."}]
+[ListParagraph|LIST] Supportive Medications: Cancer treatment takes a severe toll on the body. Chemotherapy suppresses the immune system, damages the gut lining, causes pain, and leaves children vulnerable to infections that can be life-threatening during treatment. UCCF funds antibacterials and antifungals to prevent and treat infections in immunocompromised children, antivirals to protect against viral complications, pain management medications, immune boosters and growth factors to rebuild white blood cell counts, and anti-nausea medications to manage side effects that, left unaddressed, cause rapid deterioration. These medications do not treat cancer directly — but without them, children cannot tolerate the treatment that does.
+  RUNS: [{"bold":true,"text":"Supportive Medications:"},{"bold":false,"text":" Cancer treatment takes a severe toll on the body. Chemotherapy suppresses the immune system, damages the gut lining, causes pain, and leaves children vulnerable to infections that can be life-threatening during treatment. UCCF funds antibacterials and antifungals to prevent and treat infections in immunocompromised children, antivirals to protect against viral complications, pain management medications, immune boosters and growth factors to rebuild white blood cell counts, and anti-nausea medications to manage side effects that, left unaddressed, cause rapid deterioration. These medications do not treat cancer directly — but without them, children cannot tolerate the treatment that does."}]
+[ListParagraph|LIST] Nutrition: Malnutrition is one of the most significant and underappreciated barriers to childhood cancer survival in Uganda. Children undergoing chemotherapy have dramatically increased nutritional needs at exactly the moment when their appetite is suppressed, their gut is damaged, and their families are least able to provide adequate food. Poor nutrition reduces a child's ability to tolerate chemotherapy, increases treatment-related complications, slows recovery, and directly reduces survival rates. Since launching our Nutrition Programme in 2023, UCCF has provided daily, nutritionally balanced meals to up to 150 children in the paediatric oncology ward at UCI — with measurable improvements in treatment completion rates. For many of these children, the meal provided by UCCF is the only meal they will receive that day.
+  RUNS: [{"bold":true,"text":"Nutrition:"},{"bold":false,"text":" Malnutrition is one of the most significant and underappreciated barriers to childhood cancer survival in Uganda. Children undergoing chemotherapy have dramatically increased nutritional needs at exactly the moment when their appetite is suppressed, their gut is damaged, and their families are least able to provide adequate food. Poor nutrition reduces a child's ability to tolerate chemotherapy, increases treatment-related complications, slows recovery, and directly reduces survival rates. Since launching our Nutrition Programme in 2023, UCCF has provided daily, nutritionally balanced meals to up to 150 children in the paediatric oncology ward at UCI — with measurable improvements in treatment completion rates. For many of these children, the meal provided by UCCF is the only meal they will receive that day."}]
+[ListParagraph|LIST] Transport Facilitation: Many families travel hundreds of kilometres to reach UCI, and treatment requires repeated journeys over weeks and months. Transport cost is, for many families, the single most decisive factor in whether a child completes treatment. UCCF provides direct transport support — funding bus fares and boda-boda costs, and in urgent cases arranging dedicated transport — to ensure distance and poverty are never the reason a child misses a scheduled session.
+  RUNS: [{"bold":true,"text":"Transport Facilitation:"},{"bold":false,"text":" Many families travel hundreds of kilometres to reach UCI, and treatment requires repeated journeys over weeks and months. Transport cost is, for many families, the single most decisive factor in whether a child completes treatment. UCCF provides direct transport support — funding bus fares and boda-boda costs, and in urgent cases arranging dedicated transport — to ensure distance and poverty are never the reason a child misses a scheduled session."}]
+[ListParagraph|LIST] Psychosocial Counselling and Play Therapy: A cancer diagnosis is a profound psychological trauma for the child and the entire family. UCCF provides individual and group counselling for children and caregivers alongside structured play therapy and expressive arts programmes, helping children process their experience, maintain a sense of normalcy, and stay emotionally connected. A child who feels safe, seen, and supported is far more likely to complete treatment than one who does not.
+  RUNS: [{"bold":true,"text":"Psychosocial Counselling and Play Therapy:"},{"bold":false,"text":" A cancer diagnosis is a profound psychological trauma for the child and the entire family. UCCF provides individual and group counselling for children and caregivers alongside structured play therapy and expressive arts programmes, helping children process their experience, maintain a sense of normalcy, and stay emotionally connected. A child who feels safe, seen, and supported is far more likely to complete treatment than one who does not."}]
+[ListParagraph|LIST] WASH Programme: Immunocompromised children are acutely vulnerable to infections arising from contaminated water or poor sanitation. UCCF's WASH Programme supports safe water access, hygiene education, and improved sanitation conditions within the treatment environment — reducing infection-related treatment interruptions.
+  RUNS: [{"bold":true,"text":"WASH Programme:"},{"bold":false,"text":" Immunocompromised children are acutely vulnerable to infections arising from contaminated water or poor sanitation. UCCF's WASH Programme supports safe water access, hygiene education, and improved sanitation conditions within the treatment environment — reducing infection-related treatment interruptions."}]
+[ListParagraph|LIST] Caretaker Support: Behind every child with cancer is a caretaker who has left their home and livelihood to be present at UCI. UCCF recognises caretakers explicitly as beneficiaries — providing counselling, peer support, and practical assistance to ensure they can sustain the commitment their child's treatment demands.
+  RUNS: [{"bold":true,"text":"Caretaker Support:"},{"bold":false,"text":" Behind every child with cancer is a caretaker who has left their home and livelihood to be present at UCI. UCCF recognises caretakers explicitly as beneficiaries — providing counselling, peer support, and practical assistance to ensure they can sustain the commitment their child's treatment demands."}]
+[] 
+[] 2.  Education and Awareness
+  RUNS: [{"bold":true,"text":"2.  Education and Awareness"}]
+[] Childhood cancer is largely invisible in Uganda. Most families have never heard of the diseases that will one day threaten their children's lives. By the time a parent recognises that something is wrong, the cancer has often progressed to an advanced stage — dramatically reducing the chance of survival. Early detection is the difference between a curable disease and a fatal one. UCCF's education and awareness programmes exist to close this knowledge gap — building a Uganda where communities, schools, health workers, and policymakers understand childhood cancer well enough to act on it early.
+[ListParagraph|LIST] 3C Programme — Children Caring about Cancer: Launched in 2010 and now active in over 200 schools across Uganda, the 3C Programme places cancer awareness directly in the hands of young people — the generation most likely to recognise early symptoms and the future community leaders who will shape Uganda's response to cancer for decades to come. Each school hosts a student-led 3C Club that designs its own cancer awareness activities, organises fundraising, and hosts events. The annual 3C Christmas Party — traditionally hosted at Namagunga Girls School — is a celebration of student leadership and community solidarity. 3C members are among the most passionate participants in the Childhood Cancer Colour Run each year.
+  RUNS: [{"bold":true,"text":"3C Programme — Children Caring about Cancer:"},{"bold":false,"text":" Launched in 2010 and now active in over 200 schools across Uganda, the 3C Programme places cancer awareness directly in the hands of young people — the generation most likely to recognise early symptoms and the future community leaders who will shape Uganda's response to cancer for decades to come. Each school hosts a student-led 3C Club that designs its own cancer awareness activities, organises fundraising, and hosts events. The annual 3C Christmas Party — traditionally hosted at Namagunga Girls School — is a celebration of student leadership and community solidarity. 3C members are among the most passionate participants in the Childhood Cancer Colour Run each year."}]
+[ListParagraph|LIST] Community Outreach: Cancer stigma remains a significant barrier to early diagnosis. Families conceal diagnoses out of shame, delay seeking care out of fear, or turn to traditional healers — losing critical weeks in which treatment would have been most effective. UCCF's outreach programmes bring accurate, compassionate information directly into affected communities, working with local leaders, religious institutions, village health teams, and women's groups to build awareness of warning signs and the support available at UCI.
+  RUNS: [{"bold":true,"text":"Community Outreach:"},{"bold":false,"text":" Cancer stigma remains a significant barrier to early diagnosis. Families conceal diagnoses out of shame, delay seeking care out of fear, or turn to traditional healers — losing critical weeks in which treatment would have been most effective. UCCF's outreach programmes bring accurate, compassionate information directly into affected communities, working with local leaders, religious institutions, village health teams, and women's groups to build awareness of warning signs and the support available at UCI."}]
+[ListParagraph|LIST] Health Worker Training and Engagement: Many childhood cancers are first encountered not at a specialist centre but at a district hospital or health centre. UCCF engages with frontline health workers across Uganda to build confidence in recognising childhood cancer — reducing the diagnostic delays that allow cancers to progress to advanced, harder-to-treat stages before a child ever reaches UCI.
+  RUNS: [{"bold":true,"text":"Health Worker Training and Engagement:"},{"bold":false,"text":" Many childhood cancers are first encountered not at a specialist centre but at a district hospital or health centre. UCCF engages with frontline health workers across Uganda to build confidence in recognising childhood cancer — reducing the diagnostic delays that allow cancers to progress to advanced, harder-to-treat stages before a child ever reaches UCI."}]
+[ListParagraph|LIST] Media Campaigns: UCCF uses radio, television, print, digital, and social media to raise national awareness of childhood cancer — its signs, its treatability, and the support available. Strategic media engagement around Childhood Cancer Awareness Month and the Colour Run places childhood cancer in the national conversation and normalises the idea that cancer in children, with early detection and the right support, can be overcome.
+  RUNS: [{"bold":true,"text":"Media Campaigns:"},{"bold":false,"text":" UCCF uses radio, television, print, digital, and social media to raise national awareness of childhood cancer — its signs, its treatability, and the support available. Strategic media engagement around Childhood Cancer Awareness Month and the Colour Run places childhood cancer in the national conversation and normalises the idea that cancer in children, with early detection and the right support, can be overcome."}]
+[] 3.  Research
+  RUNS: [{"bold":true,"text":"3.  Research"}]
+[] Data saves lives. In the fight against childhood cancer, the absence of reliable data is not merely an academic inconvenience — it is a direct obstacle to saving children. Without knowing how many children are diagnosed, where they come from, what cancers they have, how they respond to treatment, and why they abandon care, it is impossible to design effective interventions, make the case for policy change, or attract the international funding that could transform outcomes. Research is therefore not peripheral to UCCF's mission — it is foundational to it.
+[ListParagraph|LIST] Paediatric Cancer Registry: UCCF is working in close partnership with UCI to develop and maintain a comprehensive national paediatric cancer registry — systematically capturing data on every child diagnosed with cancer at UCI, recording diagnoses, treatment protocols, outcomes, and barriers to care. For the first time, Uganda will have a reliable longitudinal dataset on childhood cancer that can inform clinical practice, guide resource allocation, support policy advocacy, and provide the evidence base that international funders and research partners require. The registry is not just a database — it is the infrastructure on which Uganda's entire childhood cancer response can be built and improved.
+  RUNS: [{"bold":true,"text":"Paediatric Cancer Registry:"},{"bold":false,"text":" UCCF is working in close partnership with UCI to develop and maintain a comprehensive national paediatric cancer registry — systematically capturing data on every child diagnosed with cancer at UCI, recording diagnoses, treatment protocols, outcomes, and barriers to care. For the first time, Uganda will have a reliable longitudinal dataset on childhood cancer that can inform clinical practice, guide resource allocation, support policy advocacy, and provide the evidence base that international funders and research partners require. The registry is not just a database — it is the infrastructure on which Uganda's entire childhood cancer response can be built and improved."}]
+[ListParagraph|LIST] Original Research: UCCF's research programme, reactivated in 2023, has supported over four original research projects and contributed to two joint studies with UCI spanning prevention, early detection, treatment response, palliative care, and survivorship. Findings are shared with the medical community, policymakers, and international partners to drive evidence-based improvements in childhood cancer management.
+  RUNS: [{"bold":true,"text":"Original Research:"},{"bold":false,"text":" UCCF's research programme, reactivated in 2023, has supported over four original research projects and contributed to two joint studies with UCI spanning prevention, early detection, treatment response, palliative care, and survivorship. Findings are shared with the medical community, policymakers, and international partners to drive evidence-based improvements in childhood cancer management."}]
+[ListParagraph|LIST] Treatment Abandonment Research: Understanding why families discontinue treatment is essential to preventing it. UCCF's research in this area examines the financial, geographic, social, and psychological factors behind treatment abandonment — providing the evidence needed to design targeted interventions that address root causes rather than symptoms.
+  RUNS: [{"bold":true,"text":"Treatment Abandonment Research:"},{"bold":false,"text":" Understanding why families discontinue treatment is essential to preventing it. UCCF's research in this area examines the financial, geographic, social, and psychological factors behind treatment abandonment — providing the evidence needed to design targeted interventions that address root causes rather than symptoms."}]
+[ListParagraph|LIST] International Partnerships and Representation: UCCF participates actively in the global childhood cancer research community. Our leadership has represented Uganda at the ASCO Annual Meeting, the St. Jude Global Alliance Sub-Saharan Africa Convention, the ALSAC Global Convening (500+ participants from 68 countries), and the 4th Global NCD Alliance Forum in Kigali — advocating for the inclusion of low-income country perspectives in global research and policy agendas.
+  RUNS: [{"bold":true,"text":"International Partnerships and Representation:"},{"bold":false,"text":" UCCF participates actively in the global childhood cancer research community. Our leadership has represented Uganda at the ASCO Annual Meeting, the St. Jude Global Alliance Sub-Saharan Africa Convention, the ALSAC Global Convening (500+ participants from 68 countries), and the 4th Global NCD Alliance Forum in Kigali — advocating for the inclusion of low-income country perspectives in global research and policy agendas."}]
+[ListParagraph|LIST] Informing Policy and Advocacy: Every statistic in our advocacy materials, every policy brief we submit, and every partnership we seek is grounded in evidence. UCCF uses research findings and registry data to make the case — to government, funders, and the public — for greater investment in childhood cancer prevention, diagnosis, and treatment in Uganda.
+  RUNS: [{"bold":true,"text":"Informing Policy and Advocacy:"},{"bold":false,"text":" Every statistic in our advocacy materials, every policy brief we submit, and every partnership we seek is grounded in evidence. UCCF uses research findings and registry data to make the case — to government, funders, and the public — for greater investment in childhood cancer prevention, diagnosis, and treatment in Uganda."}]
+[] 
+[] 4.  Resource Mobilisation and Advocacy
+  RUNS: [{"bold":true,"text":"4.  Resource Mobilisation and Advocacy"}]
+[] UCCF mobilises the financial and political resources needed to sustain and expand its impact, while advocating for improved prioritisation and resource allocation for childhood cancer at policy level.
+[ListParagraph|LIST] Childhood Cancer Colour Run: Uganda's fastest-growing cancer awareness and fundraising event, entering its 4th edition on 17th May 2026 with a target of 5,000–6,000 participants and a UGX 250 million fundraising goal. Participation has grown from 900 (2023) → 2,500 (2024) → 4,000 (2025), making it one of Uganda's most dynamic community health events.
+  RUNS: [{"bold":true,"text":"Childhood Cancer Colour Run:"},{"bold":false,"text":" Uganda's fastest-growing cancer awareness and fundraising event, entering its 4th edition on 17th May 2026 with a target of 5,000–6,000 participants and a UGX 250 million fundraising goal. Participation has grown from 900 (2023) → 2,500 (2024) → 4,000 (2025), making it one of Uganda's most dynamic community health events."}]
+[ListParagraph|LIST] Guardian Angel Programme: A monthly giving initiative enabling individuals and organisations to make consistent contributions towards the day-to-day needs of children in treatment.
+  RUNS: [{"bold":true,"text":"Guardian Angel Programme:"},{"bold":false,"text":" A monthly giving initiative enabling individuals and organisations to make consistent contributions towards the day-to-day needs of children in treatment."}]
+[ListParagraph|LIST] Annual Dinner and Birthday Celebrations: Community engagement events building long-term relationships with supporters and donors.
+  RUNS: [{"bold":true,"text":"Annual Dinner and Birthday Celebrations:"},{"bold":false,"text":" Community engagement events building long-term relationships with supporters and donors."}]
+[ListParagraph|LIST] In-Kind Donations: Partnerships with businesses providing food, medicines, transport, and supplies directly supporting patient care.
+  RUNS: [{"bold":true,"text":"In-Kind Donations:"},{"bold":false,"text":" Partnerships with businesses providing food, medicines, transport, and supplies directly supporting patient care."}]
+[ListParagraph|LIST] Policy Advocacy: Engagement with government and civil society networks to demand better policy, funding, and service delivery for childhood cancer in Uganda.
+  RUNS: [{"bold":true,"text":"Policy Advocacy:"},{"bold":false,"text":" Engagement with government and civil society networks to demand better policy, funding, and service delivery for childhood cancer in Uganda."}]
+[] PARTNERS AND RECOGNITION
+  RUNS: [{"bold":true,"text":"PARTNERS AND RECOGNITION"}]
+[] UCCF works within a network of respected national and international partners, reflecting its standing as a credible, accountable, and impactful organisation.
+[ListParagraph|LIST] Uganda Cancer Institute: UCCF's primary institutional partner, with whom all patient support and research activities are conducted.
+  RUNS: [{"bold":true,"text":"Uganda Cancer Institute:"},{"bold":false,"text":" UCCF's primary institutional partner, with whom all patient support and research activities are conducted."}]
+[ListParagraph|LIST] St. Jude Global Alliance: UCCF is a member of this worldwide network of institutions committed to improving childhood cancer outcomes.
+  RUNS: [{"bold":true,"text":"St. Jude Global Alliance:"},{"bold":false,"text":" UCCF is a member of this worldwide network of institutions committed to improving childhood cancer outcomes."}]
+[ListParagraph|LIST] Childhood Cancer International: UCCF is affiliated with the world's largest network of childhood cancer patient organisations.
+  RUNS: [{"bold":true,"text":"Childhood Cancer International:"},{"bold":false,"text":" UCCF is affiliated with the world's largest network of childhood cancer patient organisations."}]
+[ListParagraph|LIST] ASCO: UCCF leadership has participated in the ASCO Annual Meeting, engaging with global oncology leaders on evidence and advocacy.
+  RUNS: [{"bold":true,"text":"ASCO:"},{"bold":false,"text":" UCCF leadership has participated in the ASCO Annual Meeting, engaging with global oncology leaders on evidence and advocacy."}]
+[ListParagraph|LIST] 4th Global NCD Alliance Forum: UCCF represented Uganda at this international non-communicable disease policy forum in Kigali (2025).
+  RUNS: [{"bold":true,"text":"4th Global NCD Alliance Forum:"},{"bold":false,"text":" UCCF represented Uganda at this international non-communicable disease policy forum in Kigali (2025)."}]
+[ListParagraph|LIST] Corporate Partners: Crown Beverages, Roke Telkom, and a growing number of Uganda's leading businesses have partnered with UCCF in support of the Colour Run and patient programmes.
+  RUNS: [{"bold":true,"text":"Corporate Partners:"},{"bold":false,"text":" Crown Beverages, Roke Telkom, and a growing number of Uganda's leading businesses have partnered with UCCF in support of the Colour Run and patient programmes."}]
+[] 
+[] OUR COMMITMENT TO FINANCIAL PROBITY
+  RUNS: [{"bold":true,"text":"OUR COMMITMENT TO FINANCIAL PROBITY"}]
+[] UCCF holds itself to the highest standards of financial accountability and transparency. We understand that every contribution — whether from an individual, a corporation, or an institutional donor — represents trust. That trust is not taken lightly.
+[] UCCF's accounts are audited annually by Ernst & Young Uganda, one of the world's leading professional services firms, ensuring that our financial management meets rigorous international standards. Our reporting is aligned with the financial governance frameworks applied to global non-governmental organisations, providing donors with the assurance that resources entrusted to UCCF are managed with integrity, used purposefully, and accounted for transparently.
+[] Audited financial statements are available to donors and partners on request. We believe that openness about how we use resources is not merely good governance — it is a moral obligation to the children we serve and the people who make our work possible.
+[] LOOKING AHEAD
+  RUNS: [{"bold":true,"text":"LOOKING AHEAD"}]
+[] UCCF's immediate priority is ensuring that no child currently in treatment at UCI is forced to abandon care due to financial barriers. Our 2026–2027 programme cycle targets direct support for over 1,000 children through nutrition, transport, psychosocial care, and essential medicines — with a fundraising target of UGX 250 million through the 2026 Colour Run.
+[] Looking further ahead, UCCF is working towards the construction of a dedicated children's patient hostel on the UCI campus — a safe, comfortable home where children travelling from across Uganda can stay during extended treatment cycles. With UGX 43 million already raised towards this goal, the hostel remains UCCF's defining long-term ambition: not just a building, but a home where a child can play, rest, and heal — and not feel like they are in a hospital.
+[] PARTNER WITH US
+  RUNS: [{"bold":true,"text":"PARTNER WITH US"}]
+[] UCCF's work depends entirely on the generosity of individuals, businesses, and institutions who believe that every child deserves a fair chance at life, regardless of where they were born or what their family can afford. There are many ways to support us:
+[ListParagraph|LIST] Financial contributions and sponsorship of our programmes and events
+[ListParagraph|LIST] In-kind support — food, medicines, transport, equipment, and supplies
+[ListParagraph|LIST] Corporate partnerships aligned to your CSR strategy
+[ListParagraph|LIST] Monthly giving through the Guardian Angel Programme
+[ListParagraph|LIST] Advocacy and awareness — using your platform to amplify our cause
+[] 
+[] To explore how your organisation can partner with UCCF, please contact:
+[] Moses Echodu  |  Executive Director
+  RUNS: [{"bold":true,"text":"Moses Echodu  |  Executive Director"}]
+[] moses.echodu@uccfug.org  |  +256 700 589 714  |  www.uccfug.org
+[] 
+[] HOW TO CONTRIBUTE
+  RUNS: [{"bold":true,"text":"HOW TO CONTRIBUTE"}]
+[] Every contribution to UCCF — regardless of size or form — directly saves the life of a child with cancer in Uganda. Your support funds the diagnostics, medications, nutrition, transport, and psychosocial care that keep children in treatment and give them a fighting chance at survival. Below are the ways you can contribute.
+[] 1.  Online Donation Form
+  RUNS: [{"bold":true,"text":"1.  Online Donation Form"}]
+[] The quickest and easiest way to make a contribution is through our secure online donation form. You can make a one-time gift or set up a recurring monthly contribution.
+[] Donation Link
+  RUNS: [{"bold":true,"text":"Donation Link"}]
+[] https://forms.cloud.microsoft/pages/responsepage.aspx?id=R1tyDlgI1ke6ssF32hIQsm3L9q55oMZFlFyVR29TAkNUM1lRTU1FTkVTOEVBVFUzTjc4SzlJSTRSTy4u&route=shorturl
+[] 
+[] 2.  MTN Mobile Money
+  RUNS: [{"bold":true,"text":"2.  MTN Mobile Money"}]
+[] Send your contribution directly via MTN Mobile Money using the UCCF merchant code. Available to all MTN Uganda subscribers — instant, secure, and fully traceable.
+[] MTN Mobile Money — Merchant Payment
+  RUNS: [{"bold":true,"text":"MTN Mobile Money — Merchant Payment"}]
+[] Merchant Code:  622764
+  RUNS: [{"bold":true,"text":"Merchant Code:  "},{"bold":false,"text":"622764"}]
+[] Account Name:  Uganda Child Cancer Foundation
+  RUNS: [{"bold":true,"text":"Account Name:  "},{"bold":false,"text":"Uganda Child Cancer Foundation"}]
+[] Dial *165# → Select 'Pay Merchant' → Enter code 622764 → Enter amount → Confirm
+[] 
+[] 3.  Bank Transfer
+  RUNS: [{"bold":true,"text":"3.  Bank Transfer"}]
+[] For corporate contributions, larger donations, or international transfers, pay directly into the UCCF account at DFCU Bank Uganda. Please use your name or organisation name as the payment reference.
+[] Bank Transfer Details
+  RUNS: [{"bold":true,"text":"Bank Transfer Details"}]
+[] Bank Name:  DFCU Bank Uganda
+  RUNS: [{"bold":true,"text":"Bank Name:  "},{"bold":false,"text":"DFCU Bank Uganda"}]
+[] Account Name:  Uganda Child Cancer Foundation
+  RUNS: [{"bold":true,"text":"Account Name:  "},{"bold":false,"text":"Uganda Child Cancer Foundation"}]
+[] Account Number:  01360011682073
+  RUNS: [{"bold":true,"text":"Account Number:  "},{"bold":false,"text":"01360011682073"}]
+[] Branch:  Kyadondo Branch
+  RUNS: [{"bold":true,"text":"Branch:  "},{"bold":false,"text":"Kyadondo Branch"}]
+[] SWIFT Code:  DFCUUGKA
+  RUNS: [{"bold":true,"text":"SWIFT Code:  "},{"bold":false,"text":"DFCUUGKA"}]
+[] Please email info@uccfug.org with your transfer confirmation so we can acknowledge your contribution promptly.
+[] 
+[] 4.  In-Kind Contributions
+  RUNS: [{"bold":true,"text":"4.  In-Kind Contributions"}]
+[] We welcome donations of goods and services that directly support children in our care — including food and nutritional supplies, medicines and medical consumables, transport and fuel, stationery, toys and play materials, and professional services such as printing or event support. Please contact us before arranging an in-kind delivery so we can confirm current needs and coordinate receipt.
+[] 5.  Guardian Angel Programme
+  RUNS: [{"bold":true,"text":"5.  Guardian Angel Programme"}]
+[] The Guardian Angel Programme is UCCF's monthly giving initiative for individuals and organisations who want to make a consistent, ongoing difference. By committing to a regular monthly contribution — however modest — Guardian Angels provide UCCF with the reliable, predictable funding that allows us to plan, sustain, and expand our programmes. To join, complete the online donation form and select the recurring monthly option, or contact Moses Echodu directly.
+[] All contributions are managed under the oversight of Ernst & Young Uganda and reported to international NGO financial governance standards. Audited financial statements are available on request.
+[] 
+[] 
+[] 
+[] A society free of childhood cancer.
+  RUNS: [{"bold":true,"text":"A society free of childhood cancer."}]
