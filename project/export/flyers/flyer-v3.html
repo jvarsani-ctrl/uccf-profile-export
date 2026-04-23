@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>UCCF Flyer — Version 3</title>
+<style>
+@font-face {
+  font-family: "Brandon";
+  src: url("/home/user/uccf-profile-export/project/fonts/BrandonGrotesque-Light.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Brandon";
+  src: url("/home/user/uccf-profile-export/project/fonts/BrandonGrotesque-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Brandon";
+  src: url("/home/user/uccf-profile-export/project/fonts/BrandonGrotesque-Medium.otf") format("opentype");
+  font-weight: 500 700;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 0; }
+
+body {
+  font-family: "Brandon", "Helvetica Neue", Arial, sans-serif;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color-adjust: exact;
+  background: #00012b;
+}
+
+.page {
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
+  background: #00012b;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── HEADER ── */
+.header {
+  padding: 7mm 10mm 5mm;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.header img { height: 10mm; }
+.header-year {
+  font-size: 7.5pt;
+  color: rgba(255,255,255,.4);
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+/* ── HERO ── */
+.hero {
+  padding: 0 10mm;
+  flex-shrink: 0;
+  position: relative;
+}
+.hero-eyebrow {
+  font-size: 7.5pt;
+  font-weight: 700;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: #00acea;
+  margin-bottom: 3mm;
+}
+.hero-heading {
+  font-size: 30pt;
+  font-weight: 700;
+  color: #f2d411;
+  line-height: 1.0;
+  letter-spacing: -.03em;
+  max-width: 140mm;
+}
+.hero-sub {
+  font-size: 9pt;
+  color: rgba(255,255,255,.75);
+  line-height: 1.55;
+  margin-top: 3mm;
+  max-width: 135mm;
+}
+.hero-photo {
+  position: absolute;
+  right: 10mm;
+  top: 0;
+  width: 42mm;
+  height: 42mm;
+  border-radius: 3mm;
+  overflow: hidden;
+  border: 2px solid rgba(242,212,17,.4);
+}
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+}
+
+/* ── DIVIDER ── */
+.divider {
+  height: 1px;
+  background: rgba(255,255,255,.12);
+  margin: 5mm 10mm;
+  flex-shrink: 0;
+}
+
+/* ── CHALLENGE ── */
+.challenge {
+  padding: 0 10mm;
+  flex-shrink: 0;
+}
+.section-label {
+  font-size: 7pt;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: #f2d411;
+  margin-bottom: 3mm;
+}
+.challenge-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3mm;
+}
+.c-card {
+  padding: 4mm;
+  background: rgba(255,255,255,.06);
+  border-radius: 3mm;
+  border-top: 2.5px solid #f2d411;
+}
+.c-num {
+  font-size: 22pt;
+  font-weight: 700;
+  color: #f2d411;
+  line-height: 1;
+  letter-spacing: -.02em;
+}
+.c-desc {
+  font-size: 7.5pt;
+  color: rgba(255,255,255,.65);
+  margin-top: 1.5mm;
+  line-height: 1.4;
+}
+
+/* ── IMPACT ── */
+.impact {
+  padding: 0 10mm;
+  flex-shrink: 0;
+}
+.impact-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5mm;
+}
+.i-chip {
+  text-align: center;
+  padding: 3mm 2mm;
+  background: rgba(255,255,255,.05);
+  border-radius: 2.5mm;
+  border-bottom: 2px solid rgba(0,172,234,.5);
+}
+.i-n {
+  font-size: 16pt;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: -.015em;
+}
+.i-l {
+  font-size: 6.5pt;
+  color: rgba(255,255,255,.5);
+  margin-top: 1mm;
+  line-height: 1.3;
+}
+
+/* ── PROGRAMMES ── */
+.programmes {
+  padding: 0 10mm;
+  flex: 1;
+  min-height: 0;
+}
+.prog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5mm;
+}
+.p-card {
+  background: rgba(255,255,255,.06);
+  border-radius: 3mm;
+  padding: 4mm;
+  border-left: 3px solid rgba(0,172,234,.5);
+}
+.p-num {
+  font-size: 7pt;
+  color: #00acea;
+  font-weight: 700;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+.p-title {
+  font-size: 9pt;
+  font-weight: 700;
+  color: #fff;
+  margin: 1.5mm 0 1.5mm;
+}
+.p-desc {
+  font-size: 7.5pt;
+  color: rgba(255,255,255,.55);
+  line-height: 1.4;
+}
+
+/* ── GIVE BLOCK ── */
+.give-block {
+  margin: 0 10mm;
+  background: #f2d411;
+  border-radius: 3mm;
+  padding: 4mm 5mm;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr;
+  gap: 4mm;
+  align-items: start;
+  flex-shrink: 0;
+}
+.give-label {
+  font-size: 7pt;
+  font-weight: 700;
+  color: #00012b;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  border-right: 1.5px solid rgba(0,1,43,.2);
+  padding-right: 3mm;
+  align-self: center;
+}
+.g-opt {}
+.g-opt-title {
+  font-size: 8pt;
+  font-weight: 700;
+  color: #00012b;
+  margin-bottom: 1.5mm;
+}
+.g-opt-detail {
+  font-size: 7pt;
+  color: #2a2b4d;
+  line-height: 1.45;
+}
+.g-opt-detail b { font-weight: 700; }
+
+/* ── QUOTE STRIP ── */
+.quote-strip {
+  padding: 4mm 10mm;
+  border-top: 1px solid rgba(255,255,255,.1);
+  flex-shrink: 0;
+}
+.q-text {
+  font-size: 8pt;
+  font-style: italic;
+  color: rgba(255,255,255,.65);
+  line-height: 1.5;
+}
+.q-attr {
+  font-size: 7pt;
+  color: #00acea;
+  font-weight: 700;
+  margin-top: 1.5mm;
+}
+
+/* ── FOOTER ── */
+.footer {
+  padding: 4mm 10mm;
+  background: rgba(0,0,0,.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.footer-contact {
+  font-size: 7.5pt;
+  color: rgba(255,255,255,.75);
+  font-weight: 500;
+}
+.footer-contact b { color: #f2d411; }
+.footer-reg {
+  font-size: 6.5pt;
+  color: rgba(255,255,255,.35);
+  text-align: right;
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <img src="/home/user/uccf-profile-export/project/assets/logo-white-wide.png" alt="UCCF">
+    <span class="header-year">Organisational Profile · 2026</span>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero" style="padding-right: 60mm;">
+    <p class="hero-eyebrow">Uganda's First CSO Dedicated to Childhood Cancer</p>
+    <h1 class="hero-heading">Every child<br>deserves a<br>chance.</h1>
+    <p class="hero-sub">Founded in 2006 at the Uganda Cancer Institute, UCCF ensures that no child abandons cancer treatment because of poverty, distance, or lack of support — providing direct patient care to 1,000+ children each year.</p>
+  </div>
+  <!-- Photo sits inside hero -->
+  <div style="position:relative; height:0; overflow:visible; flex-shrink:0;">
+    <div style="position:absolute; right:10mm; top:-44mm; width:42mm; height:42mm; border-radius:3mm; overflow:hidden; border:2px solid rgba(242,212,17,.4);">
+      <img src="/home/user/uccf-profile-export/project/photos/p10.jpeg" alt="Child patient" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- CHALLENGE -->
+  <div class="challenge" style="margin-bottom:4mm;">
+    <p class="section-label">The Challenge</p>
+    <div class="challenge-row">
+      <div class="c-card">
+        <div class="c-num">3,200</div>
+        <div class="c-desc">new childhood cancer cases in Uganda every year</div>
+      </div>
+      <div class="c-card">
+        <div class="c-num">1 in 3</div>
+        <div class="c-desc">children ever access specialised treatment</div>
+      </div>
+      <div class="c-card">
+        <div class="c-num">&lt;35%</div>
+        <div class="c-desc">survival rate at UCI vs 90%+ in high-income countries</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMPACT -->
+  <div class="impact" style="margin-bottom:4mm;">
+    <p class="section-label">Impact at a Glance</p>
+    <div class="impact-row">
+      <div class="i-chip">
+        <div class="i-n">1,000+</div>
+        <div class="i-l">children annually</div>
+      </div>
+      <div class="i-chip">
+        <div class="i-n">200+</div>
+        <div class="i-l">schools in the 3C network</div>
+      </div>
+      <div class="i-chip">
+        <div class="i-n">18+</div>
+        <div class="i-l">years of service</div>
+      </div>
+      <div class="i-chip">
+        <div class="i-n">4+</div>
+        <div class="i-l">research projects since 2023</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROGRAMMES -->
+  <div class="programmes" style="margin-bottom:4mm;">
+    <p class="section-label">Our Four Programmes</p>
+    <div class="prog-grid">
+      <div class="p-card">
+        <div class="p-num">01 — Patient Support</div>
+        <div class="p-title">Medical + Non-Medical Care</div>
+        <div class="p-desc">Diagnostics, medication, nutrition, transport, psychosocial counselling, WASH, and caretaker support for children at UCI.</div>
+      </div>
+      <div class="p-card">
+        <div class="p-num">02 — Education &amp; Awareness</div>
+        <div class="p-title">3C Schools + Outreach</div>
+        <div class="p-desc">200+ school clubs, community outreach, health worker training, and national media to drive early detection.</div>
+      </div>
+      <div class="p-card">
+        <div class="p-num">03 — Research</div>
+        <div class="p-title">Data That Saves Lives</div>
+        <div class="p-desc">National cancer registry, treatment abandonment research, and representation at ASCO, St. Jude Alliance, and global NCD forums.</div>
+      </div>
+      <div class="p-card">
+        <div class="p-num">04 — Resource Mobilisation</div>
+        <div class="p-title">Colour Run &amp; More</div>
+        <div class="p-desc">Annual Colour Run (5,000–6,000 participants), Guardian Angel monthly giving, corporate partnerships, and policy advocacy.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW TO GIVE -->
+  <div class="give-block">
+    <div class="give-label">How to Give</div>
+    <div class="g-opt">
+      <div class="g-opt-title">MTN Mobile Money</div>
+      <div class="g-opt-detail">Dial <b>*165#</b> → Pay Merchant<br>Code: <b>622764</b><br>Uganda Child Cancer Foundation</div>
+    </div>
+    <div class="g-opt">
+      <div class="g-opt-title">Bank Transfer</div>
+      <div class="g-opt-detail"><b>DFCU Bank Uganda</b><br>A/C: <b>01360011682073</b><br>Branch: Kyadondo · SWIFT: DFCUUGKA</div>
+    </div>
+    <div class="g-opt">
+      <div class="g-opt-title">Online / Guardian Angel</div>
+      <div class="g-opt-detail">Secure form at <b>uccfug.org</b><br>Make a one-time or recurring monthly gift — every contribution is audited by Ernst &amp; Young.</div>
+    </div>
+  </div>
+
+  <!-- QUOTE -->
+  <div class="quote-strip">
+    <div class="q-text">"No child battling cancer in Uganda should be left behind. Every child deserves a fighting chance — regardless of where they come from or what their family can afford. That is not an aspiration. It is a commitment."</div>
+    <div class="q-attr">— Moses Echodu, Executive Director, UCCF · moses.echodu@uccfug.org · +256 700 589 714</div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-contact"><b>info@uccfug.org</b> · www.uccfug.org · +256 392 834 441</div>
+    <div class="footer-reg">Uganda Cancer Institute Campus, Upper Mulago Hill, Kampala<br>Reg. No. S.5914/6566</div>
+  </div>
+
+</div>
+</body>
+</html>

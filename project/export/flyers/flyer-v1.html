@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>UCCF Flyer — Version 1</title>
+<style>
+@font-face {
+  font-family: "Brandon";
+  src: url("/home/user/uccf-profile-export/project/fonts/BrandonGrotesque-Light.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Brandon";
+  src: url("/home/user/uccf-profile-export/project/fonts/BrandonGrotesque-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Brandon";
+  src: url("/home/user/uccf-profile-export/project/fonts/BrandonGrotesque-Medium.otf") format("opentype");
+  font-weight: 500 700;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+@page { size: A4; margin: 0; }
+
+body {
+  font-family: "Brandon", "Helvetica Neue", Arial, sans-serif;
+  background: #ffffff;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color-adjust: exact;
+}
+
+.page {
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
+  background: #fffdf2;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── HEADER ── */
+.header {
+  background: #00012b;
+  padding: 6mm 8mm;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.header img { height: 9mm; }
+.header-label {
+  color: #f2d411;
+  font-size: 7.5pt;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+/* ── PHOTO BANNER ── */
+.photo-banner {
+  width: 100%;
+  height: 50mm;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.photo-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+}
+.photo-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, rgba(0,1,43,.55) 100%);
+}
+.photo-caption {
+  position: absolute;
+  bottom: 4mm;
+  left: 8mm;
+  color: #fff;
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+/* ── TAGLINE BAND ── */
+.tagline-band {
+  background: #f2d411;
+  padding: 4mm 8mm;
+  display: flex;
+  align-items: center;
+  gap: 4mm;
+  flex-shrink: 0;
+}
+.tagline-band h1 {
+  font-size: 16pt;
+  font-weight: 700;
+  color: #00012b;
+  letter-spacing: -.02em;
+  line-height: 1;
+}
+.tagline-band .reg {
+  font-size: 7pt;
+  color: #55566f;
+  font-weight: 400;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+/* ── BODY ── */
+.body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  padding: 5mm 8mm 4mm;
+  gap: 4mm;
+}
+
+.intro {
+  font-size: 8.5pt;
+  color: #2a2b4d;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: justify;
+}
+
+/* ── CHALLENGE SECTION ── */
+.section-label {
+  font-size: 7pt;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: #00acea;
+  margin-bottom: 2mm;
+}
+
+.challenge-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3mm;
+}
+.challenge-card {
+  background: #00012b;
+  border-radius: 3mm;
+  padding: 4mm 3mm;
+  text-align: center;
+}
+.challenge-num {
+  font-size: 22pt;
+  font-weight: 700;
+  color: #f2d411;
+  line-height: 1;
+  letter-spacing: -.02em;
+}
+.challenge-desc {
+  font-size: 7pt;
+  color: #c4c4cc;
+  margin-top: 1.5mm;
+  line-height: 1.35;
+}
+
+/* ── IMPACT CHIPS ── */
+.impact-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5mm;
+}
+.impact-chip {
+  border-radius: 2.5mm;
+  padding: 3mm 2mm;
+  text-align: center;
+}
+.impact-chip:nth-child(1) { background: #f2d411; }
+.impact-chip:nth-child(2) { background: #00acea; }
+.impact-chip:nth-child(3) { background: #00012b; }
+.impact-chip:nth-child(4) { background: #2a2b4d; }
+.impact-chip:nth-child(1) .ic-num { color: #00012b; }
+.impact-chip:nth-child(2) .ic-num { color: #fff; }
+.impact-chip:nth-child(3) .ic-num { color: #f2d411; }
+.impact-chip:nth-child(4) .ic-num { color: #00acea; }
+.ic-num {
+  font-size: 16pt;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -.015em;
+}
+.ic-label {
+  font-size: 6.5pt;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-top: 1mm;
+}
+.impact-chip:nth-child(1) .ic-label { color: #00012b; }
+.impact-chip:nth-child(2) .ic-label { color: #e1f6fe; }
+.impact-chip:nth-child(3) .ic-label { color: #8a8b9a; }
+.impact-chip:nth-child(4) .ic-label { color: #8a8b9a; }
+
+/* ── PROGRAMMES ── */
+.prog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5mm;
+}
+.prog-card {
+  border: 1.5px solid #00012b;
+  border-radius: 2.5mm;
+  padding: 3mm 4mm;
+}
+.prog-num {
+  font-size: 7pt;
+  font-weight: 700;
+  color: #00acea;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.prog-title {
+  font-size: 9pt;
+  font-weight: 700;
+  color: #00012b;
+  margin: 1mm 0 1.5mm;
+}
+.prog-desc {
+  font-size: 7.5pt;
+  color: #55566f;
+  line-height: 1.4;
+}
+
+/* ── DONATE BAND ── */
+.donate-band {
+  background: #00012b;
+  border-radius: 3mm;
+  padding: 4mm 5mm;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3mm;
+  align-items: start;
+  flex-shrink: 0;
+}
+.donate-band-title {
+  grid-column: 1/-1;
+  font-size: 8pt;
+  font-weight: 700;
+  color: #f2d411;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  margin-bottom: 1mm;
+}
+.donate-option {
+  background: rgba(255,255,255,.06);
+  border-radius: 2mm;
+  padding: 3mm;
+}
+.donate-option-label {
+  font-size: 6.5pt;
+  font-weight: 700;
+  color: #00acea;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: 1.5mm;
+}
+.donate-option-title {
+  font-size: 8.5pt;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1mm;
+}
+.donate-option-body {
+  font-size: 7pt;
+  color: #c4c4cc;
+  line-height: 1.4;
+}
+.donate-option-body b { color: #f2d411; }
+
+/* ── FOOTER ── */
+.footer {
+  background: #f2d411;
+  padding: 3mm 8mm;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.footer-contact {
+  font-size: 7pt;
+  color: #00012b;
+  font-weight: 500;
+  letter-spacing: .06em;
+}
+.footer-contact b { font-weight: 700; }
+.footer-reg {
+  font-size: 6.5pt;
+  color: #55566f;
+  text-align: right;
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <img src="/home/user/uccf-profile-export/project/assets/logo-white-wide.png" alt="UCCF Logo">
+    <span class="header-label">Organisational Profile · 2026</span>
+  </div>
+
+  <!-- PHOTO BANNER -->
+  <div class="photo-banner">
+    <img src="/home/user/uccf-profile-export/project/photos/p5.jpeg" alt="Children receiving treatment at UCI">
+    <span class="photo-caption">Uganda Cancer Institute Campus, Kampala</span>
+  </div>
+
+  <!-- TAGLINE -->
+  <div class="tagline-band">
+    <h1>Every child deserves a chance.</h1>
+    <span class="reg">Reg. No. S.5914/6566</span>
+  </div>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <p class="intro">Uganda Child Cancer Foundation (UCCF) is Uganda's first civil society organisation dedicated exclusively to childhood cancer — founded in 2006 by doctors, nurses, and parents at the Uganda Cancer Institute. We provide the life-enabling support that keeps children in treatment and gives them a fighting chance at survival.</p>
+
+    <!-- CHALLENGE -->
+    <div>
+      <p class="section-label">The Challenge</p>
+      <div class="challenge-row">
+        <div class="challenge-card">
+          <div class="challenge-num">3,200</div>
+          <div class="challenge-desc">new childhood cancer cases in Uganda every year</div>
+        </div>
+        <div class="challenge-card">
+          <div class="challenge-num">1 in 3</div>
+          <div class="challenge-desc">children ever access specialised treatment</div>
+        </div>
+        <div class="challenge-card">
+          <div class="challenge-num">&lt;35%</div>
+          <div class="challenge-desc">survival rate at UCI vs 90%+ in high-income countries</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMPACT -->
+    <div>
+      <p class="section-label">Impact at a Glance</p>
+      <div class="impact-row">
+        <div class="impact-chip">
+          <div class="ic-num">1,000+</div>
+          <div class="ic-label">children supported annually</div>
+        </div>
+        <div class="impact-chip">
+          <div class="ic-num">200+</div>
+          <div class="ic-label">schools in the 3C network</div>
+        </div>
+        <div class="impact-chip">
+          <div class="ic-num">18+</div>
+          <div class="ic-label">years of service</div>
+        </div>
+        <div class="impact-chip">
+          <div class="ic-num">4+</div>
+          <div class="ic-label">research projects since 2023</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROGRAMMES -->
+    <div>
+      <p class="section-label">Our Four Programmes</p>
+      <div class="prog-grid">
+        <div class="prog-card">
+          <div class="prog-num">01</div>
+          <div class="prog-title">Patient Support</div>
+          <div class="prog-desc">Diagnostics, cancer medication, nutrition, transport, psychosocial counselling, WASH, and caretaker support — enabling 1,000+ children to complete treatment annually.</div>
+        </div>
+        <div class="prog-card">
+          <div class="prog-num">02</div>
+          <div class="prog-title">Education &amp; Awareness</div>
+          <div class="prog-desc">3C Programme in 200+ schools, community outreach, health worker training, and national media campaigns to drive early detection and reduce stigma.</div>
+        </div>
+        <div class="prog-card">
+          <div class="prog-num">03</div>
+          <div class="prog-title">Research</div>
+          <div class="prog-desc">National paediatric cancer registry, treatment abandonment research, and representation at ASCO, St. Jude Global Alliance, and the 4th Global NCD Forum.</div>
+        </div>
+        <div class="prog-card">
+          <div class="prog-num">04</div>
+          <div class="prog-title">Resource Mobilisation</div>
+          <div class="prog-desc">Childhood Cancer Colour Run (5,000–6,000 participants, May 2026), Guardian Angel monthly giving, Annual Dinner, in-kind partnerships, and policy advocacy.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DONATE -->
+    <div class="donate-band">
+      <div class="donate-band-title">How to Contribute</div>
+      <div class="donate-option">
+        <div class="donate-option-label">Option 01</div>
+        <div class="donate-option-title">MTN Mobile Money</div>
+        <div class="donate-option-body">Dial <b>*165#</b> → Pay Merchant → Enter <b>622764</b> → Confirm<br>Account: Uganda Child Cancer Foundation</div>
+      </div>
+      <div class="donate-option">
+        <div class="donate-option-label">Option 02</div>
+        <div class="donate-option-title">Bank Transfer</div>
+        <div class="donate-option-body"><b>DFCU Bank Uganda</b><br>A/C: <b>01360011682073</b><br>Branch: Kyadondo · SWIFT: DFCUUGKA</div>
+      </div>
+      <div class="donate-option">
+        <div class="donate-option-label">Option 03</div>
+        <div class="donate-option-title">Online Donation</div>
+        <div class="donate-option-body">Scan QR or visit <b>uccfug.org</b><br>One-time or recurring monthly gift via our secure Microsoft Form.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-contact"><b>info@uccfug.org</b> · www.uccfug.org · +256 392 834 441</div>
+    <div class="footer-reg">Uganda Cancer Institute Campus, Upper Mulago Hill, Kampala</div>
+  </div>
+
+</div>
+</body>
+</html>
