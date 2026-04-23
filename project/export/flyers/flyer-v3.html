@@ -28,21 +28,22 @@ body {
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
   color-adjust: exact;
-  background: #00012b;
+  background: #fff;
 }
 
 .page {
   width: 210mm;
   height: 297mm;
   overflow: hidden;
-  background: #00012b;
+  background: #ffffff;
   display: flex;
   flex-direction: column;
 }
 
 /* ── HEADER ── */
 .header {
-  padding: 7mm 10mm 5mm;
+  background: #00012b;
+  padding: 5mm 10mm;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,70 +52,92 @@ body {
 .header img { height: 10mm; }
 .header-year {
   font-size: 7.5pt;
-  color: rgba(255,255,255,.4);
+  color: rgba(255,255,255,.5);
   font-weight: 500;
   letter-spacing: .18em;
   text-transform: uppercase;
 }
 
 /* ── HERO ── */
-.hero {
-  padding: 0 10mm;
+.hero-section {
+  padding: 5mm 10mm 4mm;
+  display: grid;
+  grid-template-columns: 42% 58%;
+  gap: 5mm;
+  align-items: stretch;
   flex-shrink: 0;
-  position: relative;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5mm;
 }
 .hero-eyebrow {
-  font-size: 7.5pt;
+  font-size: 7pt;
   font-weight: 700;
-  letter-spacing: .25em;
+  letter-spacing: .22em;
   text-transform: uppercase;
   color: #00acea;
-  margin-bottom: 3mm;
 }
 .hero-heading {
-  font-size: 30pt;
+  font-size: 28pt;
   font-weight: 700;
   color: #f2d411;
   line-height: 1.0;
   letter-spacing: -.03em;
-  max-width: 140mm;
+  /* Yellow on white — large enough to read, signature brand */
+  text-shadow: 1px 1px 0 rgba(0,0,0,.12);
 }
 .hero-sub {
-  font-size: 9pt;
-  color: rgba(255,255,255,.75);
+  font-size: 8.5pt;
+  color: #2a2b4d;
   line-height: 1.55;
-  margin-top: 3mm;
-  max-width: 135mm;
+  margin-top: 1mm;
 }
-.hero-photo {
-  position: absolute;
-  right: 10mm;
-  top: 0;
-  width: 42mm;
-  height: 42mm;
+
+/* Photo box — landscape photo in bordered frame */
+.hero-photo-box {
+  border: 2.5px solid #00012b;
   border-radius: 3mm;
   overflow: hidden;
-  border: 2px solid rgba(242,212,17,.4);
+  height: 58mm;
+  position: relative;
+  flex-shrink: 0;
 }
-.hero-photo img {
+.hero-photo-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center 35%;
   display: block;
+}
+.hero-photo-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,1,43,.7) 0%, transparent 100%);
+  padding: 4mm 4mm 2.5mm;
+  font-size: 6.5pt;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: .12em;
+  text-transform: uppercase;
 }
 
 /* ── DIVIDER ── */
 .divider {
   height: 1px;
-  background: rgba(255,255,255,.12);
-  margin: 5mm 10mm;
+  background: #e6e6ea;
+  margin: 0 10mm;
   flex-shrink: 0;
 }
 
 /* ── CHALLENGE ── */
 .challenge {
-  padding: 0 10mm;
+  padding: 4mm 10mm 0;
   flex-shrink: 0;
 }
 .section-label {
@@ -122,8 +145,8 @@ body {
   font-weight: 700;
   letter-spacing: .22em;
   text-transform: uppercase;
-  color: #f2d411;
-  margin-bottom: 3mm;
+  color: #00acea;
+  margin-bottom: 2.5mm;
 }
 .challenge-row {
   display: grid;
@@ -132,7 +155,7 @@ body {
 }
 .c-card {
   padding: 4mm;
-  background: rgba(255,255,255,.06);
+  background: #00012b;
   border-radius: 3mm;
   border-top: 2.5px solid #f2d411;
 }
@@ -144,15 +167,15 @@ body {
   letter-spacing: -.02em;
 }
 .c-desc {
-  font-size: 7.5pt;
-  color: rgba(255,255,255,.65);
+  font-size: 9.5pt;
+  color: #ffffff;
   margin-top: 1.5mm;
   line-height: 1.4;
 }
 
 /* ── IMPACT ── */
 .impact {
-  padding: 0 10mm;
+  padding: 4mm 10mm 0;
   flex-shrink: 0;
 }
 .impact-row {
@@ -163,9 +186,9 @@ body {
 .i-chip {
   text-align: center;
   padding: 3mm 2mm;
-  background: rgba(255,255,255,.05);
+  background: #00012b;
   border-radius: 2.5mm;
-  border-bottom: 2px solid rgba(0,172,234,.5);
+  border-bottom: 2px solid #00acea;
 }
 .i-n {
   font-size: 16pt;
@@ -175,17 +198,16 @@ body {
   letter-spacing: -.015em;
 }
 .i-l {
-  font-size: 6.5pt;
-  color: rgba(255,255,255,.5);
+  font-size: 8pt;
+  color: rgba(255,255,255,.7);
   margin-top: 1mm;
   line-height: 1.3;
 }
 
 /* ── PROGRAMMES ── */
 .programmes {
-  padding: 0 10mm;
-  flex: 1;
-  min-height: 0;
+  padding: 4mm 10mm 0;
+  flex-shrink: 0;
 }
 .prog-grid {
   display: grid;
@@ -193,10 +215,10 @@ body {
   gap: 2.5mm;
 }
 .p-card {
-  background: rgba(255,255,255,.06);
+  background: #00012b;
   border-radius: 3mm;
   padding: 4mm;
-  border-left: 3px solid rgba(0,172,234,.5);
+  border-left: 3px solid #00acea;
 }
 .p-num {
   font-size: 7pt;
@@ -212,14 +234,14 @@ body {
   margin: 1.5mm 0 1.5mm;
 }
 .p-desc {
-  font-size: 7.5pt;
-  color: rgba(255,255,255,.55);
+  font-size: 9.5pt;
+  color: #ffffff;
   line-height: 1.4;
 }
 
 /* ── GIVE BLOCK ── */
 .give-block {
-  margin: 0 10mm;
+  margin: 4mm 10mm 0;
   background: #f2d411;
   border-radius: 3mm;
   padding: 4mm 5mm;
@@ -250,22 +272,51 @@ body {
   margin-bottom: 1.5mm;
 }
 .g-opt-detail {
-  font-size: 7pt;
+  font-size: 7.5pt;
   color: #2a2b4d;
   line-height: 1.45;
 }
-.g-opt-detail b { font-weight: 700; }
+.g-opt-detail b { font-weight: 700; color: #00012b; }
+
+/* Guardian Angel option: text + QR side by side */
+.g-opt-ga {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2mm;
+  align-items: center;
+}
+.qr-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1mm;
+}
+.qr-wrap img {
+  width: 16mm;
+  height: 16mm;
+  border: 1.5px solid rgba(0,1,43,.2);
+  border-radius: 1.5mm;
+  display: block;
+}
+.qr-wrap span {
+  font-size: 5.5pt;
+  color: #55566f;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: 700;
+  text-align: center;
+}
 
 /* ── QUOTE STRIP ── */
 .quote-strip {
-  padding: 4mm 10mm;
-  border-top: 1px solid rgba(255,255,255,.1);
+  padding: 3.5mm 10mm;
+  border-top: 1px solid #e6e6ea;
   flex-shrink: 0;
 }
 .q-text {
   font-size: 8pt;
   font-style: italic;
-  color: rgba(255,255,255,.65);
+  color: #2a2b4d;
   line-height: 1.5;
 }
 .q-attr {
@@ -278,21 +329,21 @@ body {
 /* ── FOOTER ── */
 .footer {
   padding: 4mm 10mm;
-  background: rgba(0,0,0,.3);
+  background: #00012b;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-shrink: 0;
 }
 .footer-contact {
-  font-size: 7.5pt;
-  color: rgba(255,255,255,.75);
+  font-size: 9pt;
+  color: rgba(255,255,255,.85);
   font-weight: 500;
 }
 .footer-contact b { color: #f2d411; }
 .footer-reg {
-  font-size: 6.5pt;
-  color: rgba(255,255,255,.35);
+  font-size: 8pt;
+  color: rgba(255,255,255,.45);
   text-align: right;
 }
 </style>
@@ -306,23 +357,23 @@ body {
     <span class="header-year">Organisational Profile · 2026</span>
   </div>
 
-  <!-- HERO -->
-  <div class="hero" style="padding-right: 60mm;">
-    <p class="hero-eyebrow">Uganda's First CSO Dedicated to Childhood Cancer</p>
-    <h1 class="hero-heading">Every child<br>deserves a<br>chance.</h1>
-    <p class="hero-sub">Founded in 2006 at the Uganda Cancer Institute, UCCF ensures that no child abandons cancer treatment because of poverty, distance, or lack of support — providing direct patient care to 1,000+ children each year.</p>
-  </div>
-  <!-- Photo sits inside hero -->
-  <div style="position:relative; height:0; overflow:visible; flex-shrink:0;">
-    <div style="position:absolute; right:10mm; top:-44mm; width:42mm; height:42mm; border-radius:3mm; overflow:hidden; border:2px solid rgba(242,212,17,.4);">
-      <img src="/home/user/uccf-profile-export/project/photos/p10.jpeg" alt="Child patient" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
+  <!-- HERO: text left | landscape photo right -->
+  <div class="hero-section">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Uganda's First CSO Dedicated to Childhood Cancer</p>
+      <h1 class="hero-heading">Every child<br>deserves a<br>chance.</h1>
+      <p class="hero-sub">Founded in 2006 at the Uganda Cancer Institute, UCCF ensures that no child abandons cancer treatment because of poverty, distance, or lack of support — providing direct patient care to 1,000+ children each year.</p>
+    </div>
+    <div class="hero-photo-box">
+      <img src="/home/user/uccf-profile-export/project/photos/p3.jpeg" alt="Children at Uganda Cancer Institute">
+      <div class="hero-photo-caption">Uganda Cancer Institute, Upper Mulago Hill, Kampala</div>
     </div>
   </div>
 
   <div class="divider"></div>
 
   <!-- CHALLENGE -->
-  <div class="challenge" style="margin-bottom:4mm;">
+  <div class="challenge">
     <p class="section-label">The Challenge</p>
     <div class="challenge-row">
       <div class="c-card">
@@ -341,7 +392,7 @@ body {
   </div>
 
   <!-- IMPACT -->
-  <div class="impact" style="margin-bottom:4mm;">
+  <div class="impact">
     <p class="section-label">Impact at a Glance</p>
     <div class="impact-row">
       <div class="i-chip">
@@ -364,7 +415,7 @@ body {
   </div>
 
   <!-- PROGRAMMES -->
-  <div class="programmes" style="margin-bottom:4mm;">
+  <div class="programmes">
     <p class="section-label">Our Four Programmes</p>
     <div class="prog-grid">
       <div class="p-card">
@@ -401,14 +452,20 @@ body {
       <div class="g-opt-title">Bank Transfer</div>
       <div class="g-opt-detail"><b>DFCU Bank Uganda</b><br>A/C: <b>01360011682073</b><br>Branch: Kyadondo · SWIFT: DFCUUGKA</div>
     </div>
-    <div class="g-opt">
-      <div class="g-opt-title">Online / Guardian Angel</div>
-      <div class="g-opt-detail">Secure form at <b>uccfug.org</b><br>Make a one-time or recurring monthly gift — every contribution is audited by Ernst &amp; Young.</div>
+    <div class="g-opt-ga">
+      <div>
+        <div class="g-opt-title">Online / Guardian Angel</div>
+        <div class="g-opt-detail">Secure form at <b>uccfug.org</b><br>One-time or recurring monthly gift.<br>Every contribution audited by Ernst &amp; Young.</div>
+      </div>
+      <div class="qr-wrap">
+        <img src="/home/user/uccf-profile-export/project/assets/qr-donate.png" alt="Scan to donate">
+        <span>Scan to<br>donate</span>
+      </div>
     </div>
   </div>
 
   <!-- QUOTE -->
-  <div class="quote-strip">
+  <div class="quote-strip" style="margin-top:4mm;">
     <div class="q-text">"No child battling cancer in Uganda should be left behind. Every child deserves a fighting chance — regardless of where they come from or what their family can afford. That is not an aspiration. It is a commitment."</div>
     <div class="q-attr">— Moses Echodu, Executive Director, UCCF · moses.echodu@uccfug.org · +256 700 589 714</div>
   </div>
@@ -416,7 +473,7 @@ body {
   <!-- FOOTER -->
   <div class="footer">
     <div class="footer-contact"><b>info@uccfug.org</b> · www.uccfug.org · +256 392 834 441</div>
-    <div class="footer-reg">Uganda Cancer Institute Campus, Upper Mulago Hill, Kampala<br>Reg. No. S.5914/6566</div>
+    <div class="footer-reg">Uganda Cancer Institute, Upper Mulago Hill, Kampala<br>Reg. No. S.5914/6566</div>
   </div>
 
 </div>
